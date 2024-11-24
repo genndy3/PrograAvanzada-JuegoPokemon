@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\tony-\\onedrive\\escritorio\\casopracticogit\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Program.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Program.cs",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Program.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T04:41:34.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T04:34:03.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T04:33:55.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T04:11:10.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwCQAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T23:56:45.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T23:53:32.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwDsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T23:23:06.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Usuario.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:45:46.887Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

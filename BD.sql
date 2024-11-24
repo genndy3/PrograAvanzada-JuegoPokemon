@@ -15,7 +15,7 @@ CREATE TABLE Roles (
 -- Creación de la tabla Usuarios
 CREATE TABLE Usuarios (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    Usuario VARCHAR(50) NOT NULL UNIQUE,
+    CuentaUsuario VARCHAR(50) NOT NULL UNIQUE,
     ContraseñaHash VARCHAR(255) NOT NULL,
     Nombre VARCHAR(100) NOT NULL,
     RolId INT NOT NULL,

@@ -1,0 +1,59 @@
+﻿@model Juego_de_Pokemon.Models.Usuario
+@{
+    ViewData["Title"] = "Crear Nuevo Usuario";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="offset-12">
+        <div class="card border">
+            <div class="card-header bg-dark">
+                <h3 class="text-white"><strong>Crear nuevo Usuario</strong></h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="Registrar" method="POST">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <!-- Cuenta de Usuario -->
+                    <div class="form-group">
+                        <label asp-for="CuentaUsuario" class="control-label"></label>
+                        <input asp-for="CuentaUsuario" class="form-control" placeholder="Ingresa la cuenta de usuario" />
+                        <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="form-group">
+                        <label for="password" class="control-label">Contraseña</label>
+                        <input type="password" name="password" class="form-control" placeholder="Ingresa la contraseña" required />
+                    </div>
+
+                    <!-- Nombre -->
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="RolId" class="control-label"></label>
+                        <select asp-for="RolId" class="form-control">
+                            <option value="1">Entrenador</option>
+                            <option value="2">Administrador</option>
+                            <option value="3">Enfermero</option>
+                        </select>
+                        <span asp-validation-for="RolId" class="text-danger"></span>
+                    </div>
+
+                    <!-- Botón de Registro -->
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-secondary d-block mx-auto">
+                            <i class="fa-solid fa-user-plus"></i> Registrar Usuario
+                        </button>
+                    </div>
+                </form>
+                <a asp-controller="Home" asp-action="Index">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
