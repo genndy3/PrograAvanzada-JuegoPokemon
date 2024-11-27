@@ -3,57 +3,66 @@
     ViewData["Title"] = "Crear Nuevo Usuario";
 }
 
-<h1 class="text-center">@ViewData["Title"]</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Juego_de_Pokemon</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Juego_de_Pokemon.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
 
-<div class="row">
-    <div class="offset-12">
-        <div class="card border">
-            <div class="card-header bg-dark">
-                <h3 class="text-white"><strong>Crear nuevo Usuario</strong></h3>
+<body>
+    <div class="login-container">
+        <img src="/images/logo.png" alt="Pokemon Logo" class="logo">
+        <h3 class="mb-4">Crear Nuevo Usuario</h3>
+        <form asp-action="Registrar" method="POST">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Cuenta de Usuario -->
+            <div class="form-group">
+                <label asp-for="CuentaUsuario" class="control-label">Cuenta de Usuario</label>
+                <input asp-for="CuentaUsuario" class="form-control" placeholder="Ingresa la cuenta de usuario" />
+                <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
             </div>
-            <div class="card-body">
-                <form asp-action="Registrar" method="POST">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                    <!-- Cuenta de Usuario -->
-                    <div class="form-group">
-                        <label asp-for="CuentaUsuario" class="control-label"></label>
-                        <input asp-for="CuentaUsuario" class="form-control" placeholder="Ingresa la cuenta de usuario" />
-                        <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
-                    </div>
-
-                    <!-- Contraseña -->
-                    <div class="form-group">
-                        <label for="password" class="control-label">Contraseña</label>
-                        <input type="password" name="password" class="form-control" placeholder="Ingresa la contraseña" required />
-                    </div>
-
-                    <!-- Nombre -->
-                    <div class="form-group">
-                        <label asp-for="Nombre" class="control-label"></label>
-                        <input asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre" />
-                        <span asp-validation-for="Nombre" class="text-danger"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label asp-for="RolId" class="control-label"></label>
-                        <select asp-for="RolId" class="form-control">
-                            <option value="1">Entrenador</option>
-                            <option value="2">Administrador</option>
-                            <option value="3">Enfermero</option>
-                        </select>
-                        <span asp-validation-for="RolId" class="text-danger"></span>
-                    </div>
-
-                    <!-- Botón de Registro -->
-                    <div class="form-group mt-3">
-                        <button type="submit" class="btn btn-secondary d-block mx-auto">
-                            <i class="fa-solid fa-user-plus"></i> Registrar Usuario
-                        </button>
-                    </div>
-                </form>
-                <a asp-controller="Home" asp-action="Index">Volver</a>
+            <!-- Contraseña -->
+            <div class="form-group">
+                <label for="password" class="control-label">Contraseña</label>
+                <input type="password" name="password" class="form-control" placeholder="Ingresa la contraseña" required />
             </div>
+
+            <!-- Nombre -->
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+
+            <!-- Rol -->
+            <div class="form-group">
+                <label asp-for="RolId" class="control-label">Rol</label>
+                <select asp-for="RolId" class="form-control">
+                    <option value="1">Entrenador</option>
+                    <option value="2">Administrador</option>
+                    <option value="3">Enfermero</option>
+                </select>
+                <span asp-validation-for="RolId" class="text-danger"></span>
+            </div>
+
+            <!-- Botón de Registro -->
+            <button type="submit" class="btn btn-primary btn-block mt-4">
+                <i class="fa-solid fa-user-plus"></i> Registrar Usuario
+            </button>
+        </form>
+
+        <div class="register-link mt-3">
+            <small>¿Ya tienes cuenta? <a asp-controller="Usuarios" asp-action="Login">Inicia sesión aquí</a></small>
         </div>
     </div>
-</div>
+</body>
+</html>
+

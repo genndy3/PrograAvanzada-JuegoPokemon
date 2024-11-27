@@ -2,25 +2,39 @@
 @{
     ViewData["Title"] = "Iniciar sesión";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Juego_de_Pokemon</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Juego_de_Pokemon.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
 
-<h1 class="text-center">@ViewData["Title"]</h1>
-
-
-<form asp-action="Login" method="post">
-    <div class="form-group">
-        <label for="CuentaUsuario">Usuario:</label>
-        <input asp-for="CuentaUsuario" class="form-control" />
-        <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
+<!-- Usamos las clases definidas en el CSS -->
+<body>
+    <div class="login-container">
+        <img src="/images/logo.png" alt="Pokemon Logo" class="logo">
+        <form asp-action="Login" method="post">
+            <div class="form-group">
+                <label for="CuentaUsuario">Usuario:</label>
+                <input asp-for="CuentaUsuario" class="form-control" placeholder="Ingrese su usuario" />
+                <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Password">Contraseña:</label>
+                <input asp-for="ContraseñaHash" name="password" type="password" class="form-control" placeholder="Ingrese su contraseña" />
+                <span asp-validation-for="ContraseñaHash" class="text-danger"></span>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+        <div class="register-link">
+            <small>¿No tenés cuenta? <a asp-controller="Usuarios" asp-action="Registrar">Registrate aquí</a></small>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="Password">Contraseña:</label>
-        <input asp-for="ContraseñaHash" name="password" type="password" class="form-control" />
-        <span asp-validation-for="ContraseñaHash" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-</form>
+</body>
+</html>
 
-@if (ViewBag.Error != null)
-{
-    <div class="alert alert-danger">@ViewBag.Error</div>
-}
