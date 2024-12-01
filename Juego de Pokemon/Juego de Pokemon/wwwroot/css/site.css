@@ -44,3 +44,25 @@ body {
     background-color: #6C86D3;
     color: white;
 }
+
+.custom-border {
+    border-color: #465da7 !important;
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.form-control {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}

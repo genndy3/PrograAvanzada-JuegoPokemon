@@ -7,7 +7,7 @@ namespace Juego_de_Pokemon.Models
         [Key]
         public int Id { get; set; }
         [Required(ErrorMessage = "La cuenta de usuario es obligatorio")]
-        public string CuentaUsuario { get; set; }
+        public required string CuentaUsuario { get; set; }
         
         public string? ContraseñaHash  { get; set; }
         public string? Nombre { get; set; }

@@ -11,5 +11,7 @@ namespace Juego_de_Pokemon.Data
 
         //Agregar los modelos aquí (Cada modelo corresponde a una tabla en la BD)
         public DbSet<Usuario> Usuarios { get; set; }
+
+        public DbSet<Mensaje> Mensajes { get; set; }
     }
 }

@@ -6,83 +6,129 @@
     <title>@ViewData["Title"] - Juego_de_Pokemon</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Juego_de_Pokemon.styles.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         @if (ViewData["CuentaUsuario"] != null)
         {
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container-fluid">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                         <img src="~/images/logo.png" alt="Pokedex Logo" style="height: 60px;">
                     </a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1" style="display: flex; justify-content: center; width: 100%;">
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:auto;">
                             <li class="nav-item">
-                                <a class="btn btn-primary" style="background-color: #374369; border-color: #374369; border-radius: 20px;" href="@Url.Action("Index", "Home")">Pokédex</a>
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Home")">Pokédex</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Enfermeria", "Home")">Enfermería</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("RedEntrenadores", "Home")">Red de Entrenadores</a>
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "RedEntrenadores")">Red de Entrenadores</a>
                             </li>
                         </ul>
-                        <button class="btn" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 30px;">
-                            <img src="~/images/batalla.png" alt="Batalla" style="height: 30px;" />
-                        </button>
 
-                        <button class="btn" style="background-color: #C9D1EF; border-color:#C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 30px;">
-                            <img src="~/images/enviar.png" alt="Enviar" style="height: 30px;" />
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-
-                        <ul class="navbar-nav me-auto">
-                            <!-- Verificamos si hay un nombre de usuario en ViewData -->
-                            @if (ViewData["CuentaUsuario"] != null)
+                        <ul class="navbar-nav ms-auto">
+                            @if (ViewData["MostrarBotones"] != null && (bool)ViewData["MostrarBotones"])
                             {
-                                <li class="nav-item">
-                                    <!-- Mostramos el nombre del usuario -->
-                                    <span class="nav-link text-dark">¡Hola, @ViewData["CuentaUsuario"]!</span>
-                                </li>
-                                <li class="nav-item">
-                                    <!-- Opción de Cerrar sesión -->
-                                    <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Logout">Cerrar sesión</a>
+                                <li class="nav-item d-flex">
+                                    <button class="btn" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 15px;">
+                                        <img src="~/images/batalla.png" alt="Batalla" style="height: 30px;" />
+                                    </button>
+                                    <button class="btn abrir-modal" data-bs-toggle="modal" data-bs-target="#mensajesModal" style="background-color: #C9D1EF; border-color:#C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 15px; position: relative;">
+                                        @if (ViewData["MensajesNoLeidos"] != null && (int)ViewData["MensajesNoLeidos"] > 0)
+                                        {
+                                            <span style="background-color: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; position: absolute; top: 0; right: 0;">
+                                                @(ViewData["MensajesNoLeidos"])
+                                            </span>
+                                        }
+                                        <img src="~/images/enviar.png" alt="Enviar" style="height: 30px;" />
+                                    </button>
                                 </li>
                             }
-                            else
-                            {
-                                <!-- Si no hay usuario en sesión, mostramos Login y Registrar -->
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Registrar">Registrar</a>
-                                </li>
-                            }
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">¡Hola, @ViewData["CuentaUsuario"]!</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Logout">Cerrar sesión</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         }
     </header>
+
+    <div class="modal fade" id="mensajesModal" tabindex="-1" aria-labelledby="mensajeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mensajeModalLabel">Mensajes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    @if (ViewData["Mensajes"] != null)
+                    {
+                        @foreach (var mensaje in Model)
+                        {
+                            <div class="col-md-12 mb-4">
+                                <div class="shadow-sm rounded" style="background-color: #f8f9fa;">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="/images/usuario.png" alt="Avatar" class="rounded-circle border border-1" style="width: 50px; height: 50px; object-fit: cover;">
+                                                <div class="ms-3">
+                                                    @if (@mensaje.Estado == "Leído")
+                                                    {
+                                                        <p class="text-primary">Leído</p>
+                                                    }
+                                                    <h5 class="card-title mb-0">@mensaje.Remitente.Nombre</h5>
+                                                    <p class="card-text">@mensaje.Contenido</p>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <form asp-controller="Home" asp-action="BorrarMensaje" method="post">
+                                                    <input type="hidden" name="id" value="@mensaje.Id" />
+                                                    <button type="submit" class="btn btn-danger">Borrar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>No tienes mensajes.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
     @if (ViewData["CuentaUsuario"] != null)
     {
-        <footer class="border-top footer text-muted" style="background-color: #6C86D3; color: white; font-weight: bold; padding: 20px 0;">
+        <footer class="border-top footer text-muted" style="margin-top: auto; background-color: #6C86D3; color: white; font-weight: bold; padding: 20px 0; position: absolute; bottom: 0; width: 100%; text-align: center;">
             <div class="container" style="max-width: 90%; text-align: center;">
-                <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: white; text-decoration: none;">&copy; 2024 - Derechos Reservados</a>
+                <a style="color: white; text-decoration: none;">&copy; 2024 - Derechos Reservados</a>
             </div>
         </footer>
     }
@@ -90,5 +136,23 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $('#mensajesModal').on('show.bs.modal', function (event) {
+            var usuarioId = '@ViewData["UsuarioActivo"]';
+
+            $.ajax({
+                url: '@Url.Action("MarcarComoLeido", "Home")',
+                type: 'POST',
+                data: { usuarioId: usuarioId },
+                success: function (response) {
+                    console.log("Mensajes marcados como leídos.");
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error al marcar mensajes como leídos:", error);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
