@@ -2808,19 +2808,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tony-\\.nuget\\packages\\": {}
+    "C:\\Users\\madia\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
+      "projectUniqueName": "C:\\Users\\madia\\Desktop\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
       "projectName": "Juego de Pokemon",
-      "projectPath": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
-      "packagesPath": "C:\\Users\\tony-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\obj\\",
+      "projectPath": "C:\\Users\\madia\\Desktop\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
+      "packagesPath": "C:\\Users\\madia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\madia\\Desktop\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tony-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\madia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
