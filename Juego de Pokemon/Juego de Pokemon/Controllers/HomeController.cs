@@ -42,12 +42,23 @@ namespace Juego_de_Pokemon.Controllers
                 .Where(m => m.DestinatarioId == currentUserId && m.Estado == "Enviado")
                 .CountAsync();
 
+            var retos = await _context.Retos
+				.Where(m => m.RetadoId == currentUserId)
+				.Include(m => m.Retador)
+				.ToListAsync();
+
+            var retosPendientes = await _context.Retos
+                .Where(m => m.RetadoId == currentUserId && m.Estado == "Pendiente")
+                .CountAsync();
 
             ViewData["CuentaUsuario"] = cuentaUsuario;
             ViewData["Mensajes"] = mensajes;
+			ViewData["Retos"] = retos;
+            ViewData["RetosPendientes"] = retosPendientes;
             ViewData["UsuarioActivo"] = currentUserId;
             ViewData["MensajesNoLeidos"] = mensajesNoLeidos;
 			ViewData["MostrarBotones"] = true;
+
 			return View(mensajes);
         }
 
@@ -92,5 +103,20 @@ namespace Juego_de_Pokemon.Controllers
 
 			return RedirectToAction("Index", "Home");
 		}
-	}
+
+        [HttpPost]
+        public async Task<IActionResult> BorrarReto(int id)
+        {
+            var reto = await _context.Retos.FindAsync(id);
+            if (reto == null)
+            {
+                return NotFound();
+            }
+
+            _context.Retos.Remove(reto);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Home");
+        }
+    }
 }

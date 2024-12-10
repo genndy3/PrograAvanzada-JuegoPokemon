@@ -77,5 +77,43 @@ namespace Juego_de_Pokemon.Controllers
             return RedirectToAction("Index");
         }
 
-    }
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> GuardarReto(int RetadoId)
+		{
+			_logger.LogInformation("RetadoId recibido: " + RetadoId);
+
+			var usuarioRetado = await _context.Usuarios.FindAsync(RetadoId);
+			if (usuarioRetado == null)
+			{
+				_logger.LogWarning("El usuario retado no existe.");
+				return BadRequest("El usuario retado no existe.");
+			}
+
+			var cuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
+			var retador = await _context.Usuarios.FirstOrDefaultAsync(u => u.CuentaUsuario == cuentaUsuario);
+
+			if (retador == null)
+			{
+				_logger.LogWarning("Usuario no encontrado.");
+				return BadRequest("Usuario no encontrado.");
+			}
+
+			Reto reto = new Reto
+			{
+				RetadorId = retador.Id,
+				RetadoId = RetadoId,
+				FechaReto = DateTime.Now,
+				Estado = "Pendiente"
+			};
+
+			_context.Retos.Add(reto);
+			await _context.SaveChangesAsync();
+
+			_logger.LogInformation("Reto enviado correctamente.");
+			return RedirectToAction("Index");
+		}
+
+
+	}
 }

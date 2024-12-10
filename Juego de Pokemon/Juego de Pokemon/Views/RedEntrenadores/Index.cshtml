@@ -23,7 +23,7 @@
 						<img src="/images/usuario.png" alt="Avatar" class="rounded-circle border border-1" style="width: 50px; height: 50px; object-fit: cover;">
 						<h5 class="card-title ms-3 mb-0">@usuario.Nombre</h5>
 						<div class="d-flex ms-auto gap-2">
-							<button class="btn" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; width: 50px; height: 50px;">
+							<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#EnviarRetoModal" data-usuario-id-reto="@usuario.Id" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; width: 50px; height: 50px;">
 								<img src="~/images/batalla.png" alt="Batalla" style="height: 30px;" />
 							</button>
 							<button class="btn abrir-modal" data-bs-toggle="modal" data-bs-target="#EnviarMensajeModal" data-usuario-id="@usuario.Id" data-usuario-nombre="@usuario.Nombre" data-usuario-avatar="/images/usuario.png" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; width: 50px; height: 50px;">
@@ -39,58 +39,116 @@
 
 <!-- Modal para enviar mensaje -->
 <div class="modal fade" id="EnviarMensajeModal" tabindex="-1" aria-labelledby="mensajeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="d-flex align-items-center">
-                    <img src="/images/usuario.png" class="rounded-circle me-2" style="width: 50px; height: 50px; object-fit: cover;">
-                    <h5 class="modal-title" id="mensajeModalLabel"><span id="usuarioNombre"></span></h5>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="mensajeForm" method="post" action="@Url.Action("GuardarMensaje", "RedEntrenadores")">
-                    @Html.AntiForgeryToken()
-                    <input type="hidden" id="destinatarioId" name="destinatarioId" />
-                    <textarea class="form-control" id="contenidoMensaje" name="contenido" rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="btnEnviarMensaje">Enviar</button>
-            </div>
-        </div>
-    </div>
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="d-flex align-items-center">
+					<img src="/images/usuario.png" class="rounded-circle me-2" style="width: 50px; height: 50px; object-fit: cover;">
+					<h5 class="modal-title" id="mensajeModalLabel"><span id="usuarioNombre"></span></h5>
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form id="mensajeForm" method="post" action="@Url.Action("GuardarMensaje", "RedEntrenadores")">
+					@Html.AntiForgeryToken()
+					<input type="hidden" id="destinatarioId" name="destinatarioId" />
+					<textarea class="form-control" id="contenidoMensaje" name="contenido" rows="4" placeholder="Escribe aquí tu mensaje..."></textarea>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btnEnviarMensaje">Enviar</button>
+			</div>
+		</div>
+	</div>
 </div>
 
+<!-- Modal para enviar reto -->
+<div class="modal fade" id="EnviarRetoModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body d-flex align-items-center justify-content-center">
+				<div class="me-3">
+					<img src="/images/retoEnviado.png" style="width: 250px; height: 250px;">
+				</div>
+				<div>
+					<h2 class="modal-title mb-0 fw-bold" id="customModalLabel">¡Reto enviado!</h2>
+					<form id="retoForm" method="post" action="@Url.Action("GuardarReto", "RedEntrenadores")">
+						@Html.AntiForgeryToken()
+						<input type="hidden" id="retadoId" name="retadoId" />
+						<button type="button" class="btn fw-bold rounded" id="btnEnviarReto" style="background-color: #C9D1EF; border-color: #C9D1EF;" data-bs-dismiss="modal">
+							Volver
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const modal = document.getElementById("EnviarMensajeModal");
-        const modalTitle = modal.querySelector(".modal-title");
-        const btnEnviarMensaje = document.getElementById("btnEnviarMensaje");
+	document.addEventListener("DOMContentLoaded", function () {
+		const modal = document.getElementById("EnviarMensajeModal");
+		const modalTitle = modal.querySelector(".modal-title");
+		const btnEnviarMensaje = document.getElementById("btnEnviarMensaje");
 
-        document.querySelectorAll(".abrir-modal").forEach(button => {
-            button.addEventListener("click", function () {
-                const usuarioId = this.getAttribute("data-usuario-id");
-                const usuarioNombre = this.getAttribute("data-usuario-nombre");
+		// Abrir modal para enviar mensaje
+		document.querySelectorAll(".abrir-modal").forEach(button => {
+			button.addEventListener("click", function () {
+				const usuarioId = this.getAttribute("data-usuario-id");
+				const usuarioNombre = this.getAttribute("data-usuario-nombre");
 
+				modalTitle.querySelector("span").textContent = usuarioNombre;
+				document.getElementById("destinatarioId").value = usuarioId;
+			});
+		});
 
-                modalTitle.querySelector("span").textContent = usuarioNombre;
-                document.getElementById("destinatarioId").value = usuarioId;
-            });
-        });
+		// Enviar mensaje
+		btnEnviarMensaje.addEventListener("click", function () {
+			const contenido = document.getElementById("contenidoMensaje").value;
+			const destinatarioId = document.getElementById("destinatarioId").value;
 
+			if (contenido.trim() !== "") {
+				document.getElementById("mensajeForm").submit();
+			} else {
+				alert("Por favor, escribe un mensaje antes de enviar.");
+			}
+		});
 
-        btnEnviarMensaje.addEventListener("click", function () {
+		const modalReto = document.getElementById("EnviarRetoModal");
+		const btnEnviarReto = document.getElementById("btnEnviarReto");
 
-            const contenido = document.getElementById("contenidoMensaje").value;
-            const destinatarioId = document.getElementById("destinatarioId").value;
+		// Abrir modal para enviar reto
+		document.querySelectorAll(".btn[data-usuario-id-reto]").forEach(button => {
+			button.addEventListener("click", function () {
+				const usuarioId = this.getAttribute("data-usuario-id-reto");
+				document.getElementById("retadoId").value = usuarioId;
+			});
+		});
 
-            if (contenido.trim() !== "") {
-                document.getElementById("mensajeForm").submit();
-            } else {
-                alert("Por favor, escribe un mensaje antes de enviar.");
-            }
-        });
-    });
+		// Enviar reto
+		function enviarFormulario() {
+			const retadoId = document.getElementById("retadoId").value;
+
+			if (retadoId && retadoId !== "0") {
+				retoForm.submit();
+			} else {
+				alert("Error: RetadoId no válido.");
+			}
+		}
+
+		// Evento para el botón "volver"
+		btnEnviarReto.addEventListener("click", function () {
+			enviarFormulario();
+		});
+
+		// Evento para el cierre del modal
+		$('#EnviarRetoModal').on('hidden.bs.modal', function () {
+			enviarFormulario();
+		});
+	});
+
 </script>
 

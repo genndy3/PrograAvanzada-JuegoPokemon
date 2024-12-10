@@ -13,5 +13,7 @@ namespace Juego_de_Pokemon.Data
         public DbSet<Usuario> Usuarios { get; set; }
 
         public DbSet<Mensaje> Mensajes { get; set; }
+
+        public DbSet<Reto> Retos { get; set; }
     }
 }
