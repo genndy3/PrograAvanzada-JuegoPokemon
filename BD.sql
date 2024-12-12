@@ -123,3 +123,15 @@ VALUES
 ('Torchic', 'Fuego', 'Agua', 45, 60, 40),
 ('Mudkip', 'Agua', 'Eléctrico', 50, 70, 50),
 ('Beautifly', 'Volador', 'Fuego', 60, 70, 50);
+
+-- Inserción de columnas para el funcionamiendo de la enfermería
+ALTER TABLE Pokemones
+ADD Imagen NVARCHAR(255) NULL;
+
+UPDATE Pokemones
+SET Imagen = CONCAT('Pokemon', Id, '.png')
+WHERE Id BETWEEN 1 AND 12;
+
+ALTER TABLE Pokedex_Pokemon
+ADD Estado NVARCHAR(100) NULL;
+

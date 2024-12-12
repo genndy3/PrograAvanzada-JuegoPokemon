@@ -58,8 +58,8 @@ namespace Juego_de_Pokemon.Controllers
             ViewData["UsuarioActivo"] = currentUserId;
             ViewData["MensajesNoLeidos"] = mensajesNoLeidos;
 			ViewData["MostrarBotones"] = true;
-
-			return View(mensajes);
+            ViewData["MostrarMenu"] = true;
+            return View(mensajes);
         }
 
         public IActionResult Privacy()

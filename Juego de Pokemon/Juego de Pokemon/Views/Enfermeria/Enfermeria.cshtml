@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewData["Title"] = "Enfermería";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model EnfermeriaViewModel
+
+<h1 class="text-center text-primary">Enfermería</h1>
+
+<div class="row">
+    <div class="col-md-3">
+        <ul class="nav flex-column nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pendientes-tab" data-bs-toggle="tab" data-bs-target="#pendientes" type="button" role="tab" aria-controls="pendientes" aria-selected="true">Pendientes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="completados-tab" data-bs-toggle="tab" data-bs-target="#completados" type="button" role="tab" aria-controls="completados" aria-selected="false">Completados</button>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="pendientes" role="tabpanel" aria-labelledby="pendientes-tab">
+                <div class="row">
+                    @if (Model.PokemonPendiente != null && Model.PokemonPendiente.Any())
+                    {
+                        foreach (var pokemon in Model.PokemonPendiente)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="height: 150px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@pokemon.Nombre</h5>
+                                        <form method="post" asp-action="CompletarPokemon" asp-route-pokemonId="@pokemon.Id">
+                                            <button type="submit" class="btn btn-primary">Completar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>No hay Pokémon pendientes.</p>
+                    }
+                </div>
+            </div>
+            <div class="tab-pane fade" id="completados" role="tabpanel" aria-labelledby="completados-tab">
+                <div class="row">
+                    @if (Model.PokemonCompletados != null && Model.PokemonCompletados.Any())
+                    {
+                        foreach (var pokemon in Model.PokemonCompletados)
+                        {
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="height: 150px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@pokemon.Nombre</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>No hay Pokémon completados.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

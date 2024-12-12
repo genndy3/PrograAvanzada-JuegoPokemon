@@ -66,7 +66,11 @@ namespace Juego_de_Pokemon.Controllers
                 if (usuarioValido != null)
                 {
                     HttpContext.Session.SetString("CuentaUsuario", usuarioValido.CuentaUsuario);
-
+                    // Redirigir a la vista correspondiente según el rol del usuario
+                    if (usuarioValido.RolId == 3) // Rol de enfermero
+                    {
+                        return RedirectToAction("Enfermeria", "Enfermeria");
+                    }
                     return RedirectToAction("Index", "Home");
                 }
                 else

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Juego de Pokemon.props" />
+</Project>

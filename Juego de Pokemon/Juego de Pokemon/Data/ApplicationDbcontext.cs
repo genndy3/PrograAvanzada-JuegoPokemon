@@ -15,5 +15,16 @@ namespace Juego_de_Pokemon.Data
         public DbSet<Mensaje> Mensajes { get; set; }
 
         public DbSet<Reto> Retos { get; set; }
+        public DbSet<Pokemon> Pokemones { get; set; }
+        public DbSet<Pokedex> Pokedex { get; set; }
+        public DbSet<PokedexPokemon> Pokedex_Pokemon { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configuración de la clave primaria compuesta para PokedexPokemon
+            modelBuilder.Entity<PokedexPokemon>()
+                .HasKey(pp => new { pp.PokedexId, pp.PokemonId });
+        }
     }
 }

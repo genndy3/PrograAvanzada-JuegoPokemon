@@ -1,0 +1,67 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Juego_de_Pokemon
+build_property.RootNamespace = Juego_de_Pokemon
+build_property.ProjectDir = C:\Users\tony-\OneDrive\Escritorio\Ultimo avance\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\tony-\OneDrive\Escritorio\Ultimo avance\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Enfermeria/Enfermeria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mZXJtZXJpYVxFbmZlcm1lcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Enfermeria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mZXJtZXJpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/RedEntrenadores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVkRW50cmVuYWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcUmVnaXN0cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tony-/OneDrive/Escritorio/Ultimo avance/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bpsak9iz51

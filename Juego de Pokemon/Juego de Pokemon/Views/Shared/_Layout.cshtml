@@ -25,15 +25,18 @@
 
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:auto;">
-                            <li class="nav-item">
-                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Home")">Pokédex</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Enfermeria", "Home")">Enfermería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "RedEntrenadores")">Red de Entrenadores</a>
-                            </li>
+                            @if (ViewData["MostrarMenu"] != null && (bool)ViewData["MostrarMenu"])
+                            {
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Home")">Pokédex</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Enfermeria")">Enfermería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "RedEntrenadores")">Red de Entrenadores</a>
+                                </li>
+                            }
                         </ul>
 
                         <ul class="navbar-nav ms-auto">
