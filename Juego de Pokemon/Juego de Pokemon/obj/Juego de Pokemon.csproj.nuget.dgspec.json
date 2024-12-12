@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj": {}
+    "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj": {
+    "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
+        "projectUniqueName": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
         "projectName": "Juego de Pokemon",
-        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\obj\\",
+        "projectPath": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Juego de Pokemon.csproj",
+        "packagesPath": "C:\\Users\\tony-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tony-\\OneDrive\\Escritorio\\casopracticogit\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tony-\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

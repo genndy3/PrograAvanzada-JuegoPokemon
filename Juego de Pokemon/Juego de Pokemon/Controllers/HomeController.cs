@@ -20,6 +20,7 @@ namespace Juego_de_Pokemon.Controllers
         public async Task<IActionResult> Index()
 
         {
+            ViewData["MostrarMenu"] = true;
             var cuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
             var user = await _context.Usuarios
                 .FirstOrDefaultAsync(u => u.CuentaUsuario == cuentaUsuario);

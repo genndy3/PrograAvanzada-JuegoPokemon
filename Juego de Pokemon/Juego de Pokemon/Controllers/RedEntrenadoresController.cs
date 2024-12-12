@@ -32,6 +32,7 @@ namespace Juego_de_Pokemon.Controllers
 
 			ViewData["CuentaUsuario"] = CuentaUsuario;
             ViewData["MostrarBotones"] = false;
+            ViewData["MostrarMenu"] = true;
             return View(usuarios);
         }
 
