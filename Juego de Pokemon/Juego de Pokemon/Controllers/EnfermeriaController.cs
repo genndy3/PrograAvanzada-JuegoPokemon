@@ -38,7 +38,6 @@ namespace Juego_de_Pokemon.Controllers
 
             // Configurar ViewData para pasar datos al layout
             ViewData["CuentaUsuario"] = currentUserName;
-            ViewData["MostrarBotones"] = true; // Cambia según tus necesidades
             ViewData["MostrarMenu"] = true;
             // Obtener la Pokédex del usuario
             var pokedex = await _context.Pokedex
@@ -80,7 +79,7 @@ namespace Juego_de_Pokemon.Controllers
                 PokemonDisponibles = pokemonDisponibles
             };
 
-            return View(model);
+			return View(model);
         }
 
         public async Task<IActionResult> Enfermeria()
@@ -104,7 +103,6 @@ namespace Juego_de_Pokemon.Controllers
 
             // Configurar ViewData para pasar datos al layout
             ViewData["CuentaUsuario"] = currentUserName;
-            ViewData["MostrarBotones"] = false; // Cambia según tus necesidades
             ViewData["MostrarMenu"] = false;
             // Recuperar todos los Pokémon pendientes
             var pokemonPendiente = await _context.Pokedex_Pokemon
@@ -128,7 +126,7 @@ namespace Juego_de_Pokemon.Controllers
                 PokemonCompletados = pokemonCompletados
             };
 
-            return View(model);
+			return View(model);
         }
 
         [HttpPost]

@@ -1,0 +1,56 @@
+﻿@{
+	ViewData["Title"] = "Mensajes";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<div class="card">
+
+				<div class="card-header">
+					<h5 class="card-title">Mensajes</h5>
+				</div>
+
+				<div class="card-body">
+					@if (Model != null)
+					{
+						@foreach (var reto in Model)
+						{
+							<div class="col-md-12 mb-4">
+								<div class="shadow-sm rounded" style="background-color: #f8f9fa;">
+									<div class="card-body">
+										<div class="d-flex align-items-center justify-content-between">
+											<div class="d-flex align-items-center">
+												<img src="/images/usuario.png" alt="Avatar" class="rounded-circle border border-1" style="width: 50px; height: 50px; object-fit: cover;">
+												<div class="ms-3">
+													<h5 class="card-title mb-0">@reto.Retador.Nombre</h5>
+													<p class="card-text">¡Te ha enviado un reto!</p>
+												</div>
+											</div>
+
+											<div>
+												<form asp-controller="" asp-action="" method="post">
+													<input type="hidden" name="id" value="@reto.Id" />
+													<button type="submit" class="btn btn-success">Aceptar</button>
+												</form>
+												<form asp-controller="Retos" asp-action="BorrarReto" method="post">
+													<input type="hidden" name="id" value="@reto.Id" />
+													<button type="submit" class="btn btn-danger">Rechazar</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						}
+					}
+					else
+					{
+						<p>No tienes retos.</p>
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

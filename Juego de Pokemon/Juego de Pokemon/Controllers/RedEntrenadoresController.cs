@@ -12,7 +12,6 @@ namespace Juego_de_Pokemon.Controllers
         private readonly ApplicationDbcontext _context;
         private readonly ILogger<RedEntrenadoresController> _logger;
 
-        // Constructor único con ambas dependencias
         public RedEntrenadoresController(ApplicationDbcontext context, ILogger<RedEntrenadoresController> logger)
         {
             _context = context;
@@ -21,17 +20,33 @@ namespace Juego_de_Pokemon.Controllers
 
         public async Task<ActionResult> Index()
         {
-            // Obtener el nombre de usuario logueado desde la sesión
-            var currentUserName = HttpContext.Session.GetString("CuentaUsuario");
-
-            var usuarios = await _context.Usuarios
-                                          .Where(u => u.CuentaUsuario != currentUserName)
-                                          .ToListAsync();
-
 			var CuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
 
+			var usuarios = await _context.Usuarios
+                                          .Where(u => u.CuentaUsuario != CuentaUsuario)
+                                          .ToListAsync();
+
+			var user = await _context.Usuarios
+				.FirstOrDefaultAsync(u => u.CuentaUsuario == CuentaUsuario);
+
+			if (user == null)
+			{
+				return RedirectToAction("Login", "Account");
+			}
+
+			var currentUserId = user.Id;
+
+			var mensajesNoLeidos = await _context.Mensajes
+				.Where(m => m.DestinatarioId == currentUserId && m.Estado == "Enviado")
+				.CountAsync();
+
+			var retosPendientes = await _context.Retos
+				.Where(m => m.RetadoId == currentUserId && m.Estado == "Pendiente")
+				.CountAsync();
+
+			ViewData["MensajesNoLeidos"] = mensajesNoLeidos;
+			ViewData["RetosPendientes"] = retosPendientes;
 			ViewData["CuentaUsuario"] = CuentaUsuario;
-            ViewData["MostrarBotones"] = false;
             ViewData["MostrarMenu"] = true;
             return View(usuarios);
         }
