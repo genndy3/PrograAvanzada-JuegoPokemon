@@ -10,7 +10,6 @@ namespace Juego_de_Pokemon.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbcontext _context;
-
         public HomeController(ILogger<HomeController> logger, ApplicationDbcontext context)
         {
             _logger = logger;
@@ -18,7 +17,6 @@ namespace Juego_de_Pokemon.Controllers
         }
 
         public async Task<IActionResult> Index()
-
         {
             var cuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
             var user = await _context.Usuarios
@@ -39,10 +37,16 @@ namespace Juego_de_Pokemon.Controllers
                 .Where(m => m.RetadoId == currentUserId && m.Estado == "Pendiente")
                 .CountAsync();
 
+            var pokemones = await _context.Pokemones
+                .OrderBy(r => Guid.NewGuid()) 
+                .Take(5)                   
+                .ToListAsync();
+
             ViewData["CuentaUsuario"] = cuentaUsuario;
-			ViewData["RetosPendientes"] = retosPendientes;
-			ViewData["UsuarioActivo"] = currentUserId;
+            ViewData["RetosPendientes"] = retosPendientes;
+            ViewData["UsuarioActivo"] = currentUserId;
             ViewData["MensajesNoLeidos"] = mensajesNoLeidos;
+            ViewData["Pokemones"] = pokemones;
             ViewData["MostrarMenu"] = true;
             return View();
         }
@@ -57,7 +61,5 @@ namespace Juego_de_Pokemon.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        
     }
 }

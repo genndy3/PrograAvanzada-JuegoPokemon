@@ -6,391 +6,97 @@
     <h1 class="display-4" style="color: #495B9C; font-weight: bold;">Pokédex</h1>
 </div>
 
-<div style="border: 1px solid #6C86D3; background-color: white; padding: 20px; margin-top: 20px; border-radius: 20px;">
+<h3>Pokemones disponibles:</h3>
 
+@if (ViewData["Pokemones"] != null)
+{
+    var pokemones = (List<Pokemon>)ViewData["Pokemones"];
     <div class="container py-5">
         <div class="row justify-content-center">
+            @foreach (var pokemon in pokemones)
+            {
+                <div class="card" style="border-radius: 15px; width: 25%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
+                        HP @pokemon.HP
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-start">
+               
+                        @if (!string.IsNullOrEmpty(pokemon.Imagen))
+                        {
+                            <img src="@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="max-width: 100%; height: auto; margin-bottom: 10px; position: relative; z-index: 10;" />
+                        }
 
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  background-image: url('/images/Fondo.png'); background-size: cover; background-position: center;">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 45
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>B</span>
-                            <span>U</span>
-                            <span>L</span>
-                            <span>B</span>
-                            <span>A</span>
-                            <span>S</span>
-                            <span>A</span>
-                            <span>U</span>
-                            <span>R</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon1.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 1</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/hoja.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
+                        <h5 class="card-title" style="text-align: left; margin-bottom: 10px; margin-top: -10px; width: 100%;">@pokemon.Nombre</h5>
+
+                        <div class="d-flex align-items-center justify-content-start" style="position: relative; width: 100%;">
+                            @if (pokemon.Tipo == "Agua")
+                            {
+                                <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Tipo == "Fuego")
+                            {
+                                <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Tipo == "Siniestro")
+                            {
+                                <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Tipo == "Volador")
+                            {
+                                <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Tipo == "Dragón")
+                            {
+                                <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else
+                            {
+                                <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            <p class="card-text" style="margin: 0; z-index: 5;">Tipo: @pokemon.Tipo</p>
                         </div>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 39
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>C</span>
-                            <span>H</span>
-                            <span>A</span>
-                            <span>R</span>
-                            <span>M</span>
-                            <span>A</span>
-                            <span>N</span>
-                            <span>D</span>
-                            <span>E</span>
-                            <span>R</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon2.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 2</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Fuego.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
+                    <div style="position: absolute; bottom: 5px; right: 3px; z-index: 0;">
+                        <img src="/images/Fondo.gif" alt="Fondo animado" style="width: 160px; height: 140px;">
                     </div>
                 </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 44
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>S</span>
-                            <span>Q</span>
-                            <span>U</span>
-                            <span>I</span>
-                            <span>R</span>
-                            <span>T</span>
-                            <span>L</span>
-                            <span>E</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon3.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 3</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Agua.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 61
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>D</span>
-                            <span>R</span>
-                            <span>A</span>
-                            <span>G</span>
-                            <span>O</span>
-                            <span>N</span>
-                            <span>A</span>
-                            <span>I</span>
-                            <span>R</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon4.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 4</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Dragon.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 45
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>C</span>
-                            <span>H</span>
-                            <span>I</span>
-                            <span>K</span>
-                            <span>O</span>
-                            <span>R</span>
-                            <span>I</span>
-                            <span>T</span>
-                            <span>A</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon5.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 5</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/hoja.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 39
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>C</span>
-                            <span>Y</span>
-                            <span>N</span>
-                            <span>D</span>
-                            <span>A</span>
-                            <span>Q</span>
-                            <span>U</span>
-                            <span>I</span>
-                            <span>L</span>
-                            <span>L</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon6.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 6</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Fuego.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 50
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>T</span>
-                            <span>O</span>
-                            <span>T</span>
-                            <span>O</span>
-                            <span>D</span>
-                            <span>I</span>
-                            <span>L</span>
-                            <span>E</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon7.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 7</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Agua.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 95
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>U</span>
-                            <span>M</span>
-                            <span>B</span>
-                            <span>R</span>
-                            <span>E</span>
-                            <span>O</span>
-                            <span>N</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon8.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 8</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/siniestro.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 40
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>T</span>
-                            <span>R</span>
-                            <span>E</span>
-                            <span>C</span>
-                            <span>K</span>
-                            <span>O</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon9.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 9</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/hoja.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 45
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>T</span>
-                            <span>O</span>
-                            <span>R</span>
-                            <span>C</span>
-                            <span>H</span>
-                            <span>I</span>
-                            <span>C</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon10.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 10</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Fuego.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 50
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>M</span>
-                            <span>U</span>
-                            <span>D</span>
-                            <span>K</span>
-                            <span>I</span>
-                            <span>P</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon11.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 11</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/Agua.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="border-radius: 15px; width: 15%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                    HP 60
-                </div>
-                <div class="card-body d-flex flex-column align-items-center">
-                    <div class="d-flex">
-                        <div class="vertical-text">
-                            <span>B</span>
-                            <span>E</span>
-                            <span>A</span>
-                            <span>U</span>
-                            <span>T</span>
-                            <span>I</span>
-                            <span>F</span>
-                            <span>L</span>
-                            <span>Y</span>
-                        </div>
-                        <div class="ms-3">
-                            <img src="~/pokedex/Pokemon12.png" class="card-img-top" alt="Pokémon 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Pokémon 12</h5>
-                                <div class="d-flex align-items-center">
-                                    <img src="~/pokedex/bicho.png" alt="Descripción" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
+}
+else
+{
+    <p>No hay Pokémon disponibles.</p>
+}
 
-    <style>
-        .vertical-text {
-            writing-mode: horizontal-tb;
-            text-align: center;
-            font-size: 15px;
-            font-weight: bold;
-            color: black;
-            margin-right: 10px;
-            font-weight: bold;
-        }
+<style>
+    .vertical-text {
+        writing-mode: horizontal-tb;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        margin-right: 10px;
+        font-weight: bold;
+    }
 
-        .card-body img {
-            max-width: 100%;
-            height: auto;
-        }
+    .card-body img {
+        max-width: 100%;
+        height: auto;
+    }
 
-        .card {
-            border-radius: 15px;
-            width: 15%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-image: url('/images/Fondo.png');
-            background-size: cover;
-            background-position: center;
-            margin: 10px;
-        }
+    .card {
+        border-radius: 15px;
+        width: 25%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        position: relative;
+    }
 
-    </style>
-
-
-</div>
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+</style>
