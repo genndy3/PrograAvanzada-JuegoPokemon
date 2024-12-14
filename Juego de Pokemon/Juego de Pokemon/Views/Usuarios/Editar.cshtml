@@ -1,0 +1,40 @@
+﻿@model Juego_de_Pokemon.Models.Usuario
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h2>Editar Usuario</h2>
+
+<form asp-action="Editar">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="CuentaUsuario" class="control-label"></label>
+        <input asp-for="CuentaUsuario" class="form-control" />
+        <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContraseñaHash" class="control-label"></label>
+        <input asp-for="ContraseñaHash" class="form-control" />
+        <span asp-validation-for="ContraseñaHash" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Nombre" class="control-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="RolId" class="control-label">Rol</label>
+        <select asp-for="RolId" class="form-control">
+            <option value="1">Entrenador</option>
+            <option value="2">Administrador</option>
+            <option value="3">Enfermero</option>
+        </select>
+        <span asp-validation-for="RolId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Guardar" class="btn btn-primary" />
+    </div>
+</form>

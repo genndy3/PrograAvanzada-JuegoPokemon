@@ -1,30 +1,21 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-public class Pokemon
+namespace Juego_de_Pokemon.Models
 {
-    [Key]
-    public int Id { get; set; }
+    public class Pokemon
+    {
+        public int Id { get; set; }
 
-    [Required]
-    [MaxLength(100)]
-    public string Nombre { get; set; }
+        [Required(ErrorMessage = "El nombre es obligatorio")]
+        public string Nombre { get; set; }
 
-    [Required]
-    [MaxLength(50)]
-    public string Tipo { get; set; }
+        [Required(ErrorMessage = "El tipo es obligatorio")]
+        public string Tipo { get; set; }
 
-    [Required]
-    [MaxLength(50)]
-    public string Debilidad { get; set; }
+        public string Debilidad { get; set; }
+        public int HP { get; set; }
 
-    [Required]
-    public int HP { get; set; }
-
-    [Required]
-    public int Ataque { get; set; }
-
-    [Required]
-    public int Defensa { get; set; }
-
-    public string Imagen { get; set; }
+        public int Ataque { get; set; }
+        public int Defensa { get; set; }
+    }
 }

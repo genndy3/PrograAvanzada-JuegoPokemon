@@ -4,24 +4,30 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+
 namespace Juego_de_Pokemon.Controllers
 {
     public class UsuariosController : Controller
     {
         private readonly ApplicationDbcontext _context;
+
         public UsuariosController(ApplicationDbcontext context)
         {
             _context = context;
         }
+
         public IActionResult Index()
         {
             return View();
         }
+
         // GET: Registro
         public IActionResult Registrar()
         {
             return View();
         }
+
         // POST: Registro
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -66,11 +72,7 @@ namespace Juego_de_Pokemon.Controllers
                 if (usuarioValido != null)
                 {
                     HttpContext.Session.SetString("CuentaUsuario", usuarioValido.CuentaUsuario);
-                    // Redirigir a la vista correspondiente según el rol del usuario
-                    if (usuarioValido.RolId == 3) // Rol de enfermero
-                    {
-                        return RedirectToAction("Enfermeria", "Enfermeria");
-                    }
+
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -82,11 +84,123 @@ namespace Juego_de_Pokemon.Controllers
             return View(usuario);
         }
 
-
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("CuentaUsuario");  // Elimina la sesión del usuario
             return RedirectToAction("Login");  // Redirige al formulario de login
+        }
+
+        public async Task<IActionResult> Listar()
+        {
+            var cuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
+            var user = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.CuentaUsuario == cuentaUsuario);
+
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Usuarios");
+            }
+            else
+            {
+                var usuarios = await _context.Usuarios.ToListAsync();
+                ViewData["CuentaUsuario"] = cuentaUsuario;
+                return View(usuarios);
+            }
+        }
+
+        public async Task<IActionResult> Editar(int? id)
+        {
+            var cuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
+            var user = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.CuentaUsuario == cuentaUsuario);
+
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Usuarios");
+            }
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(m => m.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            ViewData["CuentaUsuario"] = cuentaUsuario;
+            return View(usuario);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Editar(int id, [Bind("Id,CuentaUsuario,ContraseñaHash,Nombre,RolId")] Usuario usuario)
+        {
+            var cuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
+            if (id != usuario.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(usuario);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UsuarioExists(usuario.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                ViewData["CuentaUsuario"] = cuentaUsuario;
+                return RedirectToAction(nameof(Listar));
+            }
+            return View(usuario);
+        }
+
+        public async Task<IActionResult> Eliminar(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(m => m.Id == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+            return View(usuario);
+        }
+
+        [HttpPost, ActionName("Eliminar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EliminarConfirmado(int id)
+        {
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+            {
+                return NotFound(); // Retorna un error si el usuario no existe
+            }
+
+            _context.Usuarios.Remove(usuario);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Listar));
+        }
+
+        private bool UsuarioExists(int id)
+        {
+            return _context.Usuarios.Any(e => e.Id == id);
         }
 
         // Método para calcular el hash de una contraseña
