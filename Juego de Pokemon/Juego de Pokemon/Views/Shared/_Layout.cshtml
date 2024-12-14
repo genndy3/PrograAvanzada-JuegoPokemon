@@ -25,42 +25,46 @@
 
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:auto;">
-                            @if (ViewData["MostrarMenu"] != null && (bool)ViewData["MostrarMenu"])
-                            {
-                                <li class="nav-item">
-                                    <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Home")">Pokédex</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Enfermeria")">Enfermería</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "RedEntrenadores")">Red de Entrenadores</a>
-                                </li>
-                            }
+                            <li class="nav-item">
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Index", "Home")">Pokédex</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Enfermeria", "Home")">Enfermería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Index", "RedEntrenadores")">Red de Entrenadores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;"
+                                   asp-action="Listar" asp-controller="Usuarios">
+                                    <authorize policy="Administrador">
+                                        Administrar Usuarios
+                                    </authorize>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Listar", "Pokemon")">Pokemones</a>
+                            </li>
                         </ul>
 
                         <ul class="navbar-nav ms-auto">
+                            @if (ViewData["MostrarBotones"] != null && (bool)ViewData["MostrarBotones"])
+                            {
                                 <li class="nav-item d-flex">
-                                <a class="btn" href="@Url.Action("Index", "Retos")" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 15px;  position: relative;">
-                                        @if (ViewData["RetosPendientes"] != null && (int)ViewData["RetosPendientes"] > 0)
+                                    <button class="btn" style="background-color: #C9D1EF; border-color: #C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 15px;">
+                                        <img src="~/images/batalla.png" alt="Batalla" style="height: 30px;" />
+                                    </button>
+                                    <button class="btn abrir-modal" data-bs-toggle="modal" data-bs-target="#mensajesModal" style="background-color: #C9D1EF; border-color:#C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 15px; position: relative;">
+                                        @if (ViewData["MensajesNoLeidos"] != null && (int)ViewData["MensajesNoLeidos"] > 0)
                                         {
                                             <span style="background-color: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; position: absolute; top: 0; right: 0;">
-                                                @(ViewData["RetosPendientes"])
+                                                @(ViewData["MensajesNoLeidos"])
                                             </span>
                                         }
-                                        <img src="~/images/batalla.png" alt="Batalla" style="height: 30px;" />
-                                    </a>
-                                <a class="btn" href="@Url.Action("Index", "Mensajes")"
-                                   style="background-color: #C9D1EF; border-color:#C9D1EF; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; margin-right: 15px; position: relative;">
-                                    @if (ViewData["MensajesNoLeidos"] != null && (int)ViewData["MensajesNoLeidos"] > 0)
-                                    {
-                                        <span style="background-color: red; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; position: absolute; top: 0; right: 0;">
-                                            @(ViewData["MensajesNoLeidos"])
-                                        </span>
-                                    }
-                                    <img src="~/images/enviar.png" alt="Enviar" style="height: 30px;" />
-                                </a>
+                                        <img src="~/images/enviar.png" alt="Enviar" style="height: 30px;" />
+                                    </button>
                                 </li>
+                            }
                             <li class="nav-item">
                                 <span class="nav-link text-dark">¡Hola, @ViewData["CuentaUsuario"]!</span>
                             </li>
@@ -73,6 +77,57 @@
             </nav>
         }
     </header>
+
+    <div class="modal fade" id="mensajesModal" tabindex="-1" aria-labelledby="mensajeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mensajeModalLabel">Mensajes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    @if (ViewData["Mensajes"] != null)
+                    {
+                        @foreach (var mensaje in Model)
+                        {
+                            <div class="col-md-12 mb-4">
+                                <div class="shadow-sm rounded" style="background-color: #f8f9fa;">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <img src="/images/usuario.png" alt="Avatar" class="rounded-circle border border-1" style="width: 50px; height: 50px; object-fit: cover;">
+                                                <div class="ms-3">
+                                                    @if (@mensaje.Estado == "Leído")
+                                                    {
+                                                        <p class="text-primary">Leído</p>
+                                                    }
+                                                    <h5 class="card-title mb-0">@mensaje.Remitente.Nombre</h5>
+                                                    <p class="card-text">@mensaje.Contenido</p>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <form asp-controller="Home" asp-action="BorrarMensaje" method="post">
+                                                    <input type="hidden" name="id" value="@mensaje.Id" />
+                                                    <button type="submit" class="btn btn-danger">Borrar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p>No tienes mensajes.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -93,6 +148,22 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 
+    <script>
+        $('#mensajesModal').on('show.bs.modal', function (event) {
+            var usuarioId = '@ViewData["UsuarioActivo"]';
 
+            $.ajax({
+                url: '@Url.Action("MarcarComoLeido", "Home")',
+                type: 'POST',
+                data: { usuarioId: usuarioId },
+                success: function (response) {
+                    console.log("Mensajes marcados como leídos.");
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error al marcar mensajes como leídos:", error);
+                }
+            });
+        });
+    </script>
 </body>
 </html>

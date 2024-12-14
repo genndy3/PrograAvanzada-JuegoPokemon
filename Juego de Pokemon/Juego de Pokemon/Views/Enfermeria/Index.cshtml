@@ -40,7 +40,7 @@
                 @foreach (var pokemon in Model.PokemonEnTratamiento)
                 {
                     <div class="card" style="width: 150px;">
-                        <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre">
+                        @* <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre"> *@
                         <div class="card-body text-center">
                             <h5 class="card-title">@pokemon.Nombre</h5>
                         </div>
@@ -62,7 +62,7 @@
                 @foreach (var pokemon in Model.PokemonDisponibles)
                 {
                     <div class="card" style="width: 150px;">
-                        <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre">
+                        @* <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre"> *@
                         <div class="card-body text-center">
                             <h5 class="card-title">@pokemon.Nombre</h5>
                             <form method="post" asp-action="EnviarATratamiento" asp-route-id="@pokemon.Id">
