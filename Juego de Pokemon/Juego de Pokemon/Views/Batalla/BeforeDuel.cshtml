@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Before Duel";
+}
+
+<div class="text-center">
+    <h1 class="display-4" style="color:#F52F34 ; font-weight: bold;">COMIENZA LA BATALLA</h1>
+    <p style="color: white; font-size: 1.2rem; font-style: italic; margin-top: 10px;">
+        Selecciona un Pokémon para la batalla
+    </p>
+</div>
+
+<h3 style="color: white;">Pokémon disponibles:</h3>
+
+@if (ViewData["Pokemones"] != null)
+{
+    var pokemones = (List<Pokemon>)ViewData["Pokemones"];
+    if (pokemones.Count == 0)
+    {
+        <p style="color: white;">No tienes Pokémon asignados.</p>
+    }
+    else
+    {
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                @foreach (var pokemon in pokemones)
+                {
+                    <div class="card">
+                        <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
+                            HP @pokemon.HP
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(pokemon.Imagen))
+                        {
+                            <img src="@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" />
+                        }
+
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div style="position: relative; display: flex; align-items: center;">
+                                    <img src="/images/Fondo.gif" alt="Fondo animado" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+                                    @if (pokemon.Tipo == "Agua")
+                                    {
+                                        <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                    }
+                                    else if (pokemon.Tipo == "Fuego")
+                                    {
+                                        <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                    }
+                                    else if (pokemon.Tipo == "Siniestro")
+                                    {
+                                        <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                    }
+                                    else if (pokemon.Tipo == "Volador")
+                                    {
+                                        <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                    }
+                                    else if (pokemon.Tipo == "Dragón")
+                                    {
+                                        <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                    }
+                                    <p class="card-text" style="font-weight: bold;">Tipo: @pokemon.Tipo</p>
+                                </div>
+                            </div>
+                            <h5 class="card-title">@pokemon.Nombre</h5>
+                            <form method="post" action="@Url.Action("SeleccionarPokemon", "Batalla")">
+                                <input type="hidden" name="pokemonId" value="@pokemon.Id" />
+                                <button type="submit" class="btn btn-primary">Seleccionar</button>
+                            </form>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p style="color: white;">No hay pokes asignados</p>
+}
+
+@if (ViewData["Mensaje"] != null)
+{
+    <div class="alert alert-warning">
+        @ViewData["Mensaje"]
+    </div>
+}
+
+<div class="text-center mt-4">
+    <img src="/images/carga.gif" alt="Cargando..." style="width: 100px; height: 100px;">
+</div>
+
+<style>
+    body {
+        background-image: url('/images/fondo1.gif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        border-radius: 15px;
+        width: 25%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        position: relative;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+</style>

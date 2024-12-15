@@ -109,20 +109,20 @@ CREATE TABLE PeticionesEnfermeria (
 -- Inserción de roles iniciales
 INSERT INTO Roles (Nombre) VALUES ('Entrenador'), ('Administrador'), ('Enfermero');
 
-INSERT INTO Pokemones (Nombre, Tipo, Debilidad, HP, Ataque, Defensa)
+INSERT INTO Pokemones (Nombre, Tipo, Debilidad, HP, Ataque, Defensa, Imagen)
 VALUES 
-('Bulbasaur', 'Planta', 'Fuego', 45, 49, 49),
-('Charmander', 'Fuego', 'Agua', 39, 52, 43),
-('Squirtle', 'Agua', 'Eléctrico', 44,  48, 65),
-('Dragonair', 'Dragón', 'Hielo', 61, 84, 65),
-('Chikorita', 'Planta', 'Fuego', 45, 49, 65),
-('Cyndaquil', 'Fuego', 'Agua', 39, 52, 43),
-('Totodile', 'Agua', 'Eléctrico', 50, 65, 64),
-('Umbreon', 'Siniestro', 'Lucha', 95, 65, 110),
-('Treecko', 'Planta', 'Fuego', 40, 45, 35),
-('Torchic', 'Fuego', 'Agua', 45, 60, 40),
-('Mudkip', 'Agua', 'Eléctrico', 50, 70, 50),
-('Beautifly', 'Volador', 'Fuego', 60, 70, 50);
+('Bulbasaur', 'Planta', 'Fuego', 45, 49, 49, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png'),
+('Charmander', 'Fuego', 'Agua', 39, 52, 43, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png'),
+('Squirtle', 'Agua', 'Eléctrico', 44, 48, 65, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png'),
+('Dragonair', 'Dragón', 'Hielo', 61, 84, 65, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/148.png'),
+('Chikorita', 'Planta', 'Fuego', 45, 49, 65, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/152.png'),
+('Cyndaquil', 'Fuego', 'Agua', 39, 52, 43, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/155.png'),
+('Totodile', 'Agua', 'Eléctrico', 50, 65, 64, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/158.png'),
+('Umbreon', 'Siniestro', 'Lucha', 95, 65, 110, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/197.png'),
+('Treecko', 'Planta', 'Fuego', 40, 45, 35, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/252.png'),
+('Torchic', 'Fuego', 'Agua', 45, 60, 40, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/255.png'),
+('Mudkip', 'Agua', 'Eléctrico', 50, 70, 50, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/258.png'),
+('Beautifly', 'Volador', 'Fuego', 60, 70, 50, 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/267.png');
 
 -- Inserción de columnas para el funcionamiendo de la enfermería
 ALTER TABLE Pokemones
@@ -135,3 +135,11 @@ WHERE Id BETWEEN 1 AND 12;
 ALTER TABLE Pokedex_Pokemon
 ADD Estado NVARCHAR(100) NULL;
 
+CREATE TABLE Usuario_Pokemones (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    UsuarioId INT NOT NULL,
+    PokemonId INT NOT NULL,
+    FechaAsignacion DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (UsuarioId) REFERENCES Usuarios(Id),
+    FOREIGN KEY (PokemonId) REFERENCES Pokemones(Id)
+);

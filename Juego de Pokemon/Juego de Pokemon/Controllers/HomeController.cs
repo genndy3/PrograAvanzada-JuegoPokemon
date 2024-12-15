@@ -29,6 +29,36 @@ namespace Juego_de_Pokemon.Controllers
 
             var currentUserId = user.Id;
 
+            var pokemonesAsignados = await _context.Usuario_Pokemones
+                .Where(up => up.UsuarioId == currentUserId)
+                .ToListAsync();
+
+            if (pokemonesAsignados.Count < 3)
+            {
+                var pokemonesNoAsignados = await _context.Pokemones
+                    .Where(p => !_context.Usuario_Pokemones
+                        .Any(up => up.UsuarioId == currentUserId && up.PokemonId == p.Id))
+                    .OrderBy(p => Guid.NewGuid()) 
+                    .Take(3)
+                    .ToListAsync();
+
+                foreach (var pokemon in pokemonesNoAsignados)
+                {
+                    _context.Usuario_Pokemones.Add(new Usuario_Pokemones
+                    {
+                        UsuarioId = currentUserId,
+                        PokemonId = pokemon.Id
+                    });
+                }
+
+                await _context.SaveChangesAsync();
+            }
+
+            var pokemones = await _context.Usuario_Pokemones
+                .Where(up => up.UsuarioId == currentUserId)
+                .Select(up => up.Pokemon)
+                .ToListAsync();
+
             var mensajesNoLeidos = await _context.Mensajes
                 .Where(m => m.DestinatarioId == currentUserId && m.Estado == "Enviado")
                 .CountAsync();
@@ -36,11 +66,6 @@ namespace Juego_de_Pokemon.Controllers
             var retosPendientes = await _context.Retos
                 .Where(m => m.RetadoId == currentUserId && m.Estado == "Pendiente")
                 .CountAsync();
-
-            var pokemones = await _context.Pokemones
-                .OrderBy(r => Guid.NewGuid()) 
-                .Take(5)                   
-                .ToListAsync();
 
             ViewData["CuentaUsuario"] = cuentaUsuario;
             ViewData["RetosPendientes"] = retosPendientes;

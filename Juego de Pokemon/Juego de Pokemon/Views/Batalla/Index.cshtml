@@ -76,12 +76,15 @@
         <div class="col-md-6 justify-content-center">
             <div class="game-screen border rounded p-3" style="height: 400px; position: relative;">
                 <img src="/images/fondo_batalla.jpg" style="object-fit: cover; width: 100%; height: 100%;">
-
-                <img src="/pokedex/Pokemon1.png" alt="Pikachu" style="position: absolute; bottom: 30px; left: 200px; width: 150px;">
-
-                <img src="/pokedex/Pokemon2.png" alt="Dragonair" style="position: absolute; top: 100px; right: 70px; width: 80px;">
+                @if (ViewData["PokemonSeleccionado"] != null)
+                {
+                    var pokemonSeleccionado = ViewData["PokemonSeleccionado"].ToString();
+                    <img src="@pokemonSeleccionado" alt="Pokémon Seleccionado" style="position: absolute; bottom: 30px; left: 200px; width: 150px;">
+                }
+                <img src="/pokedex/Pokemon3.png" alt="Dragonair" style="position: absolute; top: 100px; right: 70px; width: 80px;">
             </div>
         </div>
+
 
         <div class="col-md-3 text-center">
             <div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">

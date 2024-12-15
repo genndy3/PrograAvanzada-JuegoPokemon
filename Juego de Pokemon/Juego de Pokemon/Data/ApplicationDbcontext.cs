@@ -18,6 +18,7 @@ namespace Juego_de_Pokemon.Data
         public DbSet<Pokemon> Pokemones { get; set; }
         public DbSet<Pokedex> Pokedex { get; set; }
         public DbSet<PokedexPokemon> Pokedex_Pokemon { get; set; }
+        public DbSet<Usuario_Pokemones> Usuario_Pokemones { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
