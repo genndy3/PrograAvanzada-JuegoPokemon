@@ -1,0 +1,111 @@
+﻿@{
+	ViewData["Title"] = "Batalla";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+
+	.game-screen {
+		background: #d5e4f7;
+		border-radius: 10px;
+		overflow: hidden;
+		position: relative;
+		height: 300px;
+	}
+
+	.text-box {
+		background: #ffffff;
+		border: 2px solid #c4c4c4;
+		border-radius: 10px;
+		padding: 10px;
+		font-size: 14px;
+		height: 100%;
+	}
+
+	.hp-bar {
+		background: #ccc;
+		border-radius: 5px;
+		position: relative;
+		width: 100%;
+		height: 10px;
+	}
+
+		.hp-bar .hp-fill {
+			background: #28a745;
+			height: 100%;
+			border-radius: 5px;
+		}
+
+	.pokemon-avatar {
+		border: 3px solid #000;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		overflow: hidden;
+	}
+</style>
+<div class="text-center">
+    <h2 class="display-4" style="color: #495B9C; font-weight: bold;">Batalla</h2>
+</div>
+
+<div class="container p-4 rounded-3 border border-1 custom-border mt-5" style="min-height: 60vh;">
+    <div class="row mt-4">
+
+        <div class="col-md-3 text-center" style="height: 200px;">
+            <div class="text-box rounded-3 border border-1 custom-border p-2">
+                <p>Dragonair ha perdido 36 puntos de vida...</p>
+            </div>
+
+            <div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">
+                <div class="mb-3 text-center w-100">
+                    <img src="/images/usuario.png" alt="Avatar" class="rounded-circle border" style="width: 50px; height: 50px; object-fit: cover;">
+                    <h5 class="mt-2">Usuario 1</h5>
+                </div>
+
+                <div class="w-100">
+                    <div class="hp-bar" style="background-color: lightgray; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div class="hp-fill" style="background-color: green; width: 64%; height: 100%;"></div>
+                    </div>
+                    <p class="mt-1 mb-3">64/100</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6 justify-content-center">
+            <div class="game-screen border rounded p-3" style="height: 400px; position: relative;">
+                <img src="/images/fondo_batalla.jpg" style="object-fit: cover; width: 100%; height: 100%;">
+
+                <img src="/pokedex/Pokemon1.png" alt="Pikachu" style="position: absolute; bottom: 30px; left: 200px; width: 150px;">
+
+                <img src="/pokedex/Pokemon2.png" alt="Dragonair" style="position: absolute; top: 100px; right: 70px; width: 80px;">
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">
+                <div class="mb-3 text-center w-100">
+                    <img src="/images/usuario.png" alt="Avatar" class="rounded-circle border" style="width: 50px; height: 50px; object-fit: cover;">
+                    <h5 class="mt-2">Usuario 2</h5>
+                </div>
+
+                <div class="w-100">
+                    <div class="hp-bar" style="background-color: lightgray; height: 10px; border-radius: 5px; overflow: hidden;">
+                        <div class="hp-fill" style="background-color: green; width: 64%; height: 100%;"></div>
+                    </div>
+                    <p class="mt-1 mb-3">64/100</p>
+                </div>
+            </div>
+
+            <div class="mt-5 p-3 text-center d-flex flex-column align-items-center">
+                <button type="button" class="btn fw-bold rounded mb-2 w-100" style="color: white; background-color: #4059a5; border-color: #4059a5;">
+                    Atacar
+                </button>
+                <button type="button" class="btn fw-bold rounded w-100" style="background-color: #C9D1EF; border-color: #C9D1EF;">
+                    Volver
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

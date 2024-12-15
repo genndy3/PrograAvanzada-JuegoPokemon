@@ -17,5 +17,7 @@ namespace Juego_de_Pokemon.Models
 
         public int Ataque { get; set; }
         public int Defensa { get; set; }
-    }
+
+        public string Imagen { get; set; }
+	}
 }

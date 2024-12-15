@@ -1,30 +1,113 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\madia\\desktop\\pokemon\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\pokemoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\madia\\desktop\\pokemon\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\madia\\desktop\\pokemon\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\madia\\desktop\\pokemon\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\madia\\desktop\\pokemon\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\models\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\madia\\desktop\\pokemon\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\pokemon\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\pokemon\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\pokemon\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\pokemon\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\pokemon\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\pokemon\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\batallacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\batallacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\redentrenadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\redentrenadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\1b7051b1c7372b526fbbfaf6b13b75cb5b3734a993a8831241210f67c034ddf3\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\enfermeriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\enfermeriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\controllers\\mensajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\redentrenadores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\redentrenadores\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\models\\enfermeriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\models\\enfermeriaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|c:\\users\\lenovo\\source\\repos\\prograavanzada-juegopokemon\\juego de pokemon\\juego de pokemon\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B5F79659-82F9-40D6-BFFC-810906822ED1}|Juego de Pokemon\\Juego de Pokemon.csproj|solutionrelative:juego de pokemon\\views\\usuarios\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +117,373 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 16,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Eliminar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Eliminar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Eliminar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T04:41:27.366Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Pokemon.cs",
-              "DocumentMoniker": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Pokemon.cs",
-              "RelativeDocumentMoniker": "Juego de Pokemon\\Models\\Pokemon.cs",
-              "ToolTip": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Pokemon.cs",
-              "RelativeToolTip": "Juego de Pokemon\\Models\\Pokemon.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:52:36.727Z",
+              "Title": "Registrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Pokemon\\Registrar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Pokemon\\Registrar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Pokemon\\Registrar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Pokemon\\Registrar.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T04:34:47.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Juego de Pokemon\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Pokemon\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Pokemon\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Pokemon\\Editar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Pokemon\\Editar.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAADwv1YAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T04:34:37.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Editar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Editar.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwFwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T04:25:31.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Listar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Pokemon\\Listar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Pokemon\\Listar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Pokemon\\Listar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Pokemon\\Listar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T04:20:42.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Listar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T04:10:17.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BatallaController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\BatallaController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\BatallaController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\BatallaController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\BatallaController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T04:34:03.252Z",
+              "WhenOpened": "2024-12-15T04:08:31.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "additional-methods.js",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "RelativeToolTip": "Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+              "ViewState": "AgIAAP8AAAAAAAAAAAAiwAwBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-15T02:08:10.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnfermeriaController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\EnfermeriaController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\EnfermeriaController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\EnfermeriaController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\EnfermeriaController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwFwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T00:51:50.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EnfermeriaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\EnfermeriaViewModel.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Models\\EnfermeriaViewModel.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\EnfermeriaViewModel.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Models\\EnfermeriaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T00:51:47.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T00:22:09.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Program.cs",
-              "RelativeDocumentMoniker": "Juego de Pokemon\\Program.cs",
-              "ToolTip": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Program.cs",
-              "RelativeToolTip": "Juego de Pokemon\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Title": "Pokemon.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Pokemon.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Models\\Pokemon.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Pokemon.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Models\\Pokemon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T17:01:40.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\appsettings.json",
-              "RelativeDocumentMoniker": "Juego de Pokemon\\appsettings.json",
-              "ToolTip": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\appsettings.json",
-              "RelativeToolTip": "Juego de Pokemon\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-01T04:11:40.487Z",
+              "WhenOpened": "2024-12-15T00:16:38.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PokemonController.cs",
-              "DocumentMoniker": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\PokemonController.cs",
-              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\PokemonController.cs",
-              "ToolTip": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\PokemonController.cs*",
-              "RelativeToolTip": "Juego de Pokemon\\Controllers\\PokemonController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T17:00:16.149Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T00:15:56.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Juego de Pokemon\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\RedEntrenadores\\Index.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\RedEntrenadores\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\RedEntrenadores\\Index.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\RedEntrenadores\\Index.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAEcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T04:33:55.819Z",
+              "WhenOpened": "2024-12-14T23:21:16.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Listar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\1b7051b1c7372b526fbbfaf6b13b75cb5b3734a993a8831241210f67c034ddf3\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\1b7051b1c7372b526fbbfaf6b13b75cb5b3734a993a8831241210f67c034ddf3\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\AppData\\Local\\SourceServer\\1b7051b1c7372b526fbbfaf6b13b75cb5b3734a993a8831241210f67c034ddf3\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\1b7051b1c7372b526fbbfaf6b13b75cb5b3734a993a8831241210f67c034ddf3\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Listar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T23:18:53.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PokemonController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\PokemonController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\PokemonController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\PokemonController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\PokemonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:17:32.635Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MensajesController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\MensajesController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\MensajesController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\MensajesController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\MensajesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:14:01.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RedEntrenadoresController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\RedEntrenadoresController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\RedEntrenadoresController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\RedEntrenadoresController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\RedEntrenadoresController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:13:51.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T23:12:59.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\appsettings.json",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\appsettings.json",
+              "RelativeToolTip": "Juego de Pokemon\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T23:09:39.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\appsettings.Development.json",
+              "RelativeToolTip": "Juego de Pokemon\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-14T23:09:31.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Program.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Program.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:09:28.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Models\\Usuario.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:09:26.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T23:05:51.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ApplicationDbcontext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Data\\ApplicationDbcontext.cs",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Data\\ApplicationDbcontext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Data\\ApplicationDbcontext.cs",
+              "RelativeToolTip": "Juego de Pokemon\\Data\\ApplicationDbcontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T04:28:45.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Registrar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T04:11:10.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "RelativeDocumentMoniker": "Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "RelativeToolTip": "Juego de Pokemon\\Views\\Usuarios\\Login.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T23:53:32.588Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 68,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

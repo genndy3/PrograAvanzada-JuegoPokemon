@@ -23,7 +23,7 @@ namespace Juego_de_Pokemon.Controllers
 			var CuentaUsuario = HttpContext.Session.GetString("CuentaUsuario");
 
 			var usuarios = await _context.Usuarios
-                                          .Where(u => u.CuentaUsuario != CuentaUsuario)
+                                          .Where(u => u.CuentaUsuario != CuentaUsuario && u.RolId == 1)
                                           .ToListAsync();
 
 			var user = await _context.Usuarios

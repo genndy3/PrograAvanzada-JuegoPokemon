@@ -1,102 +1,102 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4" style="color: #495B9C; font-weight: bold;">Pokédex</h1>
+	<h1 class="display-4" style="color: #495B9C; font-weight: bold;">Pokédex</h1>
 </div>
 
 <h3>Pokemones disponibles:</h3>
 
 @if (ViewData["Pokemones"] != null)
 {
-    var pokemones = (List<Pokemon>)ViewData["Pokemones"];
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            @foreach (var pokemon in pokemones)
-            {
-                <div class="card" style="border-radius: 15px; width: 25%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
-                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                        HP @pokemon.HP
-                    </div>
-                    <div class="card-body d-flex flex-column align-items-start">
-               
-                       @*  @if (!string.IsNullOrEmpty(pokemon.Imagen))
-                        {
-                            <img src="@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="max-width: 100%; height: auto; margin-bottom: 10px; position: relative; z-index: 10;" />
-                        } *@
+	var pokemones = (List<Pokemon>)ViewData["Pokemones"];
+	<div class="container py-5">
+		<div class="row justify-content-center">
+			@foreach (var pokemon in pokemones)
+			{
+				<div class="card" style="border-radius: 15px; width: 25%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+					<div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
+						HP @pokemon.HP
+					</div>
+					<div class="card-body d-flex flex-column align-items-start">
 
-                        <h5 class="card-title" style="text-align: left; margin-bottom: 10px; margin-top: -10px; width: 100%;">@pokemon.Nombre</h5>
+						@if (!string.IsNullOrEmpty(pokemon.Imagen))
+						{
+							<img src="@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="max-width: 100%; height: auto; margin-bottom: 10px; position: relative; z-index: 10;" />
+						}
 
-                        <div class="d-flex align-items-center justify-content-start" style="position: relative; width: 100%;">
-                            @if (pokemon.Tipo == "Agua")
-                            {
-                                <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Fuego")
-                            {
-                                <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Siniestro")
-                            {
-                                <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Volador")
-                            {
-                                <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Dragón")
-                            {
-                                <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else
-                            {
-                                <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            <p class="card-text" style="margin: 0; z-index: 5;">Tipo: @pokemon.Tipo</p>
-                        </div>
-                    </div>
-                    <div style="position: absolute; bottom: 5px; right: 3px; z-index: 0;">
-                        <img src="/images/Fondo.gif" alt="Fondo animado" style="width: 160px; height: 140px;">
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
+						<h5 class="card-title" style="text-align: left; margin-bottom: 10px; margin-top: -10px; width: 100%;">@pokemon.Nombre</h5>
+
+						<div class="d-flex align-items-center justify-content-start" style="position: relative; width: 100%;">
+							@if (pokemon.Tipo == "Agua")
+							{
+								<img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+							}
+							else if (pokemon.Tipo == "Fuego")
+							{
+								<img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+							}
+							else if (pokemon.Tipo == "Siniestro")
+							{
+								<img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+							}
+							else if (pokemon.Tipo == "Volador")
+							{
+								<img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+							}
+							else if (pokemon.Tipo == "Dragón")
+							{
+								<img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+							}
+							else
+							{
+								<img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+							}
+							<p class="card-text" style="margin: 0; z-index: 5;">Tipo: @pokemon.Tipo</p>
+						</div>
+					</div>
+					<div style="position: absolute; bottom: 5px; right: 3px; z-index: 0;">
+						<img src="/images/Fondo.gif" alt="Fondo animado" style="width: 160px; height: 140px;">
+					</div>
+				</div>
+			}
+		</div>
+	</div>
 }
 else
 {
-    <p>No hay Pokémon disponibles.</p>
+	<p>No hay Pokémon disponibles.</p>
 }
 
 <style>
-    .vertical-text {
-        writing-mode: horizontal-tb;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        color: black;
-        margin-right: 10px;
-        font-weight: bold;
-    }
+	.vertical-text {
+		writing-mode: horizontal-tb;
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		color: black;
+		margin-right: 10px;
+		font-weight: bold;
+	}
 
-    .card-body img {
-        max-width: 100%;
-        height: auto;
-    }
+	.card-body img {
+		max-width: 100%;
+		height: auto;
+	}
 
-    .card {
-        border-radius: 15px;
-        width: 25%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-        position: relative;
-    }
+	.card {
+		border-radius: 15px;
+		width: 25%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin: 20px;
+		position: relative;
+	}
 
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
 </style>

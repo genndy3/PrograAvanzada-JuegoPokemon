@@ -1,40 +1,95 @@
 ﻿@model Juego_de_Pokemon.Models.Usuario
 
 @{
-    ViewData["Title"] = "Editar Usuario";
+	ViewData["Title"] = "Editar Usuario";
+	Layout = null;
 }
 
-<h2>Editar Usuario</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Juego_de_Pokemon</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+		@if (ViewData["CuentaUsuario"] != null)
+		{
+			<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+				<div class="container-fluid">
+					<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+						<img src="~/images/logo.png" alt="Pokedex Logo" style="height: 60px;">
+					</a>
 
-<form asp-action="Editar">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <input type="hidden" asp-for="Id" />
-    <div class="form-group">
-        <label asp-for="CuentaUsuario" class="control-label"></label>
-        <input asp-for="CuentaUsuario" class="form-control" />
-        <span asp-validation-for="CuentaUsuario" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="ContraseñaHash" class="control-label"></label>
-        <input asp-for="ContraseñaHash" class="form-control" />
-        <span asp-validation-for="ContraseñaHash" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Nombre" class="control-label"></label>
-        <input asp-for="Nombre" class="form-control" />
-        <span asp-validation-for="Nombre" class="text-danger"></span>
-    </div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-    <div class="form-group">
-        <label asp-for="RolId" class="control-label">Rol</label>
-        <select asp-for="RolId" class="form-control">
-            <option value="1">Entrenador</option>
-            <option value="2">Administrador</option>
-            <option value="3">Enfermero</option>
-        </select>
-        <span asp-validation-for="RolId" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Guardar" class="btn btn-primary" />
-    </div>
-</form>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:auto;">
+							<li class="nav-item">
+								<a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Listar", "Usuarios")">Administrar Usuarios</a>
+							</li>
+							<li class="nav-item">
+								<a class="btn btn-primary" style="background-color: #6C86D3; border-color:#6C86D3; border-radius: 20px;" href="@Url.Action("Listar", "Pokemon")">Administrar Pokemones</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<span class="nav-link text-dark">¡Hola, @ViewData["CuentaUsuario"]!</span>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Logout">Cerrar sesión</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		}
+	</header>
+
+	<div class="container">
+
+		<h2>Editar Usuario</h2>
+
+		<form asp-action="Editar">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<input type="hidden" asp-for="Id" />
+			<div class="form-group">
+				<label asp-for="CuentaUsuario" class="control-label"></label>
+				<input asp-for="CuentaUsuario" class="form-control" />
+				<span asp-validation-for="CuentaUsuario" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="ContraseñaHash" class="control-label"></label>
+				<input asp-for="ContraseñaHash" class="form-control" />
+				<span asp-validation-for="ContraseñaHash" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Nombre" class="control-label"></label>
+				<input asp-for="Nombre" class="form-control" />
+				<span asp-validation-for="Nombre" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
+				<label asp-for="RolId" class="control-label">Rol</label>
+				<select asp-for="RolId" class="form-control">
+					<option value="1">Entrenador</option>
+					<option value="2">Administrador</option>
+					<option value="3">Enfermero</option>
+				</select>
+				<span asp-validation-for="RolId" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Guardar" class="btn btn-primary" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>
