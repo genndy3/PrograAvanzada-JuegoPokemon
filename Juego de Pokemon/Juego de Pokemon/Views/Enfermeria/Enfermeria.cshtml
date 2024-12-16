@@ -1,72 +1,115 @@
-﻿
+﻿@model IEnumerable<Juego_de_Pokemon.Models.Enfermeria>
+
 @{
     ViewData["Title"] = "Enfermería";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
-@model EnfermeriaViewModel
 
-<h1 class="text-center text-primary">Enfermería</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Juego_de_Pokemon</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        @if (ViewData["CuentaUsuario"] != null)
+        {
+            <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/logo.png" alt="Pokedex Logo" style="height: 60px;">
+                    </a>
 
-<div class="row">
-    <div class="col-md-3">
-        <ul class="nav flex-column nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pendientes-tab" data-bs-toggle="tab" data-bs-target="#pendientes" type="button" role="tab" aria-controls="pendientes" aria-selected="true">Pendientes</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="completados-tab" data-bs-toggle="tab" data-bs-target="#completados" type="button" role="tab" aria-controls="completados" aria-selected="false">Completados</button>
-            </li>
-        </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:auto;">
+                            <li class="nav-item">
+                                <a class="btn btn-primary" style="background-color: #6C86D3; border-color: #6C86D3; border-radius: 20px;" href="@Url.Action("Enfermeria", "Enfermeria")">Enfermeria</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">¡Hola, @ViewData["CuentaUsuario"]!</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Usuarios" asp-action="Logout">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        }
+    </header>
+    <div class="container">
+
+<div class="mt-4 rounded-3 border border-1 custom-border" style="background-color: #ffc1d3;">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="p-2">
+            <h3>¡Bienvenido a la Enfermería!</h3>
+            <p>Aquí podrás cuidar y sanar a tus Pokémon después de sus batallas. Nuestro equipo de enfermeros/as está listo para restaurar su energía y salud, ¡para que puedan seguir luchando!</p>
+        </div>
+        <img src="/images/ash.png" class="img-fluid" style="max-width: 300px; height: auto; margin: 0; padding: 0; object-fit: contain;">
     </div>
-    <div class="col-md-9">
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="pendientes" role="tabpanel" aria-labelledby="pendientes-tab">
-                <div class="row">
-                    @if (Model.PokemonPendiente != null && Model.PokemonPendiente.Any())
-                    {
-                        foreach (var pokemon in Model.PokemonPendiente)
-                        {
-                            <div class="col-md-4">
-                                <div class="card">
-                                    @* <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="height: 150px; object-fit: cover;"> *@
-                                    <div class="card-body">
-                                        <h5 class="card-title">@pokemon.Nombre</h5>
-                                        <form method="post" asp-action="CompletarPokemon" asp-route-pokemonId="@pokemon.Id">
-                                            <button type="submit" class="btn btn-primary">Completar</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    }
-                    else
-                    {
-                        <p>No hay Pokémon pendientes.</p>
-                    }
-                </div>
-            </div>
-            <div class="tab-pane fade" id="completados" role="tabpanel" aria-labelledby="completados-tab">
-                <div class="row">
-                    @if (Model.PokemonCompletados != null && Model.PokemonCompletados.Any())
-                    {
-                        foreach (var pokemon in Model.PokemonCompletados)
-                        {
-                            <div class="col-md-4">
-                                <div class="card">
-                                    @* <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="height: 150px; object-fit: cover;"> *@
-                                    <div class="card-body">
-                                        <h5 class="card-title">@pokemon.Nombre</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    }
-                    else
-                    {
-                        <p>No hay Pokémon completados.</p>
-                    }
-                </div>
-            </div>
+</div>
+
+<!-- Tabs -->
+<ul class="nav nav-tabs mt-4" id="enfermeriaTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="en-tratamiento-tab" data-bs-toggle="tab" data-bs-target="#en-tratamiento" type="button" role="tab" aria-controls="en-tratamiento" aria-selected="true">
+            Pendientes
+        </button>
+    </li>
+</ul>
+
+<!-- Tab content -->
+<div class="tab-content mt-3" id="enfermeriaTabsContent">
+    <!-- En Tratamiento -->
+    <div class="tab-pane fade show active" id="en-tratamiento" role="tabpanel" aria-labelledby="en-tratamiento-tab">
+        <div class="d-flex flex-wrap gap-3">
+            @if (Model != null)
+            {
+                @foreach (var pokemon in @Model)
+                {
+                    <div class="card" style="width: 200px;">
+                        <img src="@pokemon.UsuarioPokemon.Pokemon.Imagen" class="card-img-top" alt="@pokemon.UsuarioPokemon.Pokemon.Nombre">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@pokemon.UsuarioPokemon.Pokemon.Nombre</h5>
+                            <p>Usuario: @pokemon.UsuarioPokemon.Usuario.Nombre</p>
+                        </div>
+
+
+                        <div class="card-footer text-center">
+                                    <form method="post" action="@Url.Action("CompletarTratamiento", "Enfermeria")">
+                                        <input type="hidden" name="enfermeriaId" value="@pokemon.Id" />
+                                        <input type="hidden" name="usuarioId" value="@pokemon.UsuarioId" />
+                                        <input type="hidden" name="pokemonId" value="@pokemon.UsuarioPokemon.Pokemon.Id" />
+                                        <button type="submit" class="btn btn-success">Completar tratamiento</button>
+                                    </form>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No hay Pokémon en tratamiento actualmente.</p>
+            }
         </div>
     </div>
 </div>
+        <footer class="footer text-muted" style="background-color: #6C86D3; color: white; font-weight: bold; padding: 20px 0; position: fixed; bottom: 0; left: 0; width: 100%; text-align: center;">
+            <div class="container" style="display: flex; justify-content: center; align-items: center; width: 100%; max-width: 90%;">
+                <a style="color: white; text-decoration: none;">&copy; 2024 - Derechos Reservados</a>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-﻿@model Juego_de_Pokemon.Models.EnfermeriaViewModel
+﻿@model IEnumerable<Juego_de_Pokemon.Models.Enfermeria>
 
 @{
     ViewData["Title"] = "Enfermería";
@@ -23,11 +23,6 @@
             En Tratamiento
         </button>
     </li>
-    <li class="nav-item" role="presentation">
-        <button class="nav-link" id="disponibles-tab" data-bs-toggle="tab" data-bs-target="#disponibles" type="button" role="tab" aria-controls="disponibles" aria-selected="false">
-            Disponibles
-        </button>
-    </li>
 </ul>
 
 <!-- Tab content -->
@@ -35,14 +30,15 @@
     <!-- En Tratamiento -->
     <div class="tab-pane fade show active" id="en-tratamiento" role="tabpanel" aria-labelledby="en-tratamiento-tab">
         <div class="d-flex flex-wrap gap-3">
-            @if (Model.PokemonEnTratamiento.Any())
+            @if (Model != null)
             {
-                @foreach (var pokemon in Model.PokemonEnTratamiento)
+                @foreach (var pokemon in @Model)
                 {
-                    <div class="card" style="width: 150px;">
-                        @* <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre"> *@
+                    <div class="card" style="width: 200px;">
+                        <img src="@pokemon.UsuarioPokemon.Pokemon.Imagen" class="card-img-top" alt="@pokemon.UsuarioPokemon.Pokemon.Nombre">
                         <div class="card-body text-center">
-                            <h5 class="card-title">@pokemon.Nombre</h5>
+                            <h5 class="card-title">@pokemon.UsuarioPokemon.Pokemon.Nombre</h5>
+                            <p>Tratamiento en curso...</p>
                         </div>
                     </div>
                 }
@@ -50,31 +46,6 @@
             else
             {
                 <p>No hay Pokémon en tratamiento actualmente.</p>
-            }
-        </div>
-    </div>
-
-    <!-- Disponibles -->
-    <div class="tab-pane fade" id="disponibles" role="tabpanel" aria-labelledby="disponibles-tab">
-        <div class="d-flex flex-wrap gap-3">
-            @if (Model.PokemonDisponibles.Any())
-            {
-                @foreach (var pokemon in Model.PokemonDisponibles)
-                {
-                    <div class="card" style="width: 150px;">
-                        @* <img src="/pokedex/@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre"> *@
-                        <div class="card-body text-center">
-                            <h5 class="card-title">@pokemon.Nombre</h5>
-                            <form method="post" asp-action="EnviarATratamiento" asp-route-id="@pokemon.Id">
-                                <button class="btn btn-primary btn-sm">Enviar a la enfermería</button>
-                            </form>
-                        </div>
-                    </div>
-                }
-            }
-            else
-            {
-                <p>No hay Pokémon disponibles actualmente.</p>
             }
         </div>
     </div>

@@ -16,16 +16,17 @@ namespace Juego_de_Pokemon.Data
 
         public DbSet<Reto> Retos { get; set; }
         public DbSet<Pokemon> Pokemones { get; set; }
-        public DbSet<Pokedex> Pokedex { get; set; }
-        public DbSet<PokedexPokemon> Pokedex_Pokemon { get; set; }
         public DbSet<Usuario_Pokemones> Usuario_Pokemones { get; set; }
+		public DbSet<Batalla> Batalla { get; set; }
+
+        public DbSet<Enfermeria> Enfermeria { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configuración de la clave primaria compuesta para PokedexPokemon
-            modelBuilder.Entity<PokedexPokemon>()
-                .HasKey(pp => new { pp.PokedexId, pp.PokemonId });
-        }
+			// Configuración de clave primaria compuesta
+			modelBuilder.Entity<Usuario_Pokemones>()
+				.HasKey(up => new { up.UsuarioId, up.PokemonId });
+		}
     }
 }

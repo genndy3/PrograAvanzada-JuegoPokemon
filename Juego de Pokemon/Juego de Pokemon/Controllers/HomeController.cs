@@ -29,11 +29,11 @@ namespace Juego_de_Pokemon.Controllers
 
             var currentUserId = user.Id;
 
-            var pokemonesAsignados = await _context.Usuario_Pokemones
+			var pokemonesAsignados = await _context.Usuario_Pokemones
                 .Where(up => up.UsuarioId == currentUserId)
                 .ToListAsync();
 
-            if (pokemonesAsignados.Count < 3)
+			if (pokemonesAsignados.Count < 3)
             {
                 var pokemonesNoAsignados = await _context.Pokemones
                     .Where(p => !_context.Usuario_Pokemones
@@ -47,17 +47,18 @@ namespace Juego_de_Pokemon.Controllers
                     _context.Usuario_Pokemones.Add(new Usuario_Pokemones
                     {
                         UsuarioId = currentUserId,
-                        PokemonId = pokemon.Id
+                        PokemonId = pokemon.Id,
+                        Vida = pokemon.HP
                     });
                 }
 
                 await _context.SaveChangesAsync();
             }
 
-            var pokemones = await _context.Usuario_Pokemones
-                .Where(up => up.UsuarioId == currentUserId)
-                .Select(up => up.Pokemon)
-                .ToListAsync();
+            var usuario_pokemones = await _context.Usuario_Pokemones
+        .Where(up => up.UsuarioId == currentUserId)
+        .Include(up => up.Pokemon)
+        .ToListAsync();
 
             var mensajesNoLeidos = await _context.Mensajes
                 .Where(m => m.DestinatarioId == currentUserId && m.Estado == "Enviado")
@@ -67,11 +68,17 @@ namespace Juego_de_Pokemon.Controllers
                 .Where(m => m.RetadoId == currentUserId && m.Estado == "Pendiente")
                 .CountAsync();
 
+            var pokemonEnfermeria = await _context.Enfermeria
+        .Where(e => e.UsuarioId == currentUserId && e.Estado == "En Proceso") // Filtrar por UsuarioId
+        .Select(e => e.PokemonId)
+        .ToListAsync();
+
+            ViewData["PokemonEnfermeriaIds"] = pokemonEnfermeria;
             ViewData["CuentaUsuario"] = cuentaUsuario;
             ViewData["RetosPendientes"] = retosPendientes;
             ViewData["UsuarioActivo"] = currentUserId;
             ViewData["MensajesNoLeidos"] = mensajesNoLeidos;
-            ViewData["Pokemones"] = pokemones;
+            ViewData["UsuarioPokemones"] = usuario_pokemones;
             ViewData["MostrarMenu"] = true;
             return View();
         }

@@ -1,18 +1,15 @@
-﻿@{
+﻿@model Juego_de_Pokemon.Models.Batalla
+@{
 	ViewData["Title"] = "Batalla";
 	Layout = "~/Views/Shared/_Layout.cshtml";
+	var pokemon1 = ViewData["Pokemon1"] as Pokemon;
+	var pokemon2 = ViewData["Pokemon2"] as Pokemon;
+	var usuarioPokemon1 = ViewData["UsuarioPokemon1"] as Usuario_Pokemones;
+	var usuarioPokemon2 = ViewData["UsuarioPokemon2"] as Usuario_Pokemones;
 }
 
 
 <style>
-
-	.game-screen {
-		background: #d5e4f7;
-		border-radius: 10px;
-		overflow: hidden;
-		position: relative;
-		height: 300px;
-	}
 
 	.text-box {
 		background: #ffffff;
@@ -24,91 +21,260 @@
 	}
 
 	.hp-bar {
-		background: #ccc;
-		border-radius: 5px;
-		position: relative;
-		width: 100%;
+		background-color: lightgray;
 		height: 10px;
-	}
-
-		.hp-bar .hp-fill {
-			background: #28a745;
-			height: 100%;
-			border-radius: 5px;
-		}
-
-	.pokemon-avatar {
-		border: 3px solid #000;
-		border-radius: 50%;
-		width: 60px;
-		height: 60px;
+		border-radius: 5px;
 		overflow: hidden;
 	}
+
+	.hp-fill {
+		background-color: green;
+		height: 100%;
+	}
+
 </style>
+
+<script>
+	function atacarJugador() {
+		const ataquePokemon1 = @Model.PokemonUsuario1.Ataque;
+		const defensaPokemon2 = @Model.PokemonUsuario2.Defensa;
+		const vidaPokemon2 = @usuarioPokemon2.Vida;
+		let vidaActual = parseInt(document.getElementById("pokemon2-vida-actual").innerText);
+
+		let nuevaVidaPokemon2 = 0;
+		let porcentajeVidaPokemon2 = 0;
+		let daño = 0;
+		let restadorAleatorio = 0;
+
+		let log = document.getElementById("text-log");
+
+		// Seleccionar aleatoriamente un valor de la lista de valores posibles
+		const valoresPosibles = [4, 8, 14, 9];
+		restadorAleatorio = valoresPosibles[Math.floor(Math.random() * valoresPosibles.length)];
+
+		// Calcular el daño (restando el valor aleatorio de la defensa)
+		daño = Math.ceil(Math.max(ataquePokemon1 - (defensaPokemon2 - restadorAleatorio), 0));
+		nuevaVidaPokemon2 = Math.max(vidaActual - daño, 0);
+
+		porcentajeVidaPokemon2 = (nuevaVidaPokemon2 / vidaPokemon2) * 100;
+		document.getElementById("pokemon2-barra").style.width = porcentajeVidaPokemon2 + "%";
+		document.getElementById("pokemon2-vida-actual").innerText = nuevaVidaPokemon2;
+
+		log.innerHTML += `<p>¡@pokemon1.Nombre atacó! Daño causado: ${daño}</p>`;
+		log.scrollTop = log.scrollHeight;
+
+		// Verificar si el oponente perdió
+		if (nuevaVidaPokemon2 === 0) {
+			log.innerHTML += `<p>¡@pokemon2.Nombre ha sido derrotado! ¡@pokemon1.Nombre gana la batalla!</p>`;
+			log.scrollTop = log.scrollHeight;
+			ModalVictoria();
+			return;
+		}
+
+		setTimeout(atacarComputadora, 3000);
+	}
+
+	function atacarComputadora() {
+		const ataquePokemon2 = @Model.PokemonUsuario2.Ataque;
+		const defensaPokemon1 = @Model.PokemonUsuario1.Defensa;
+		const vidaPokemon1 = @usuarioPokemon1.Vida;
+		let vidaActual = parseInt(document.getElementById("pokemon1-vida-actual").innerText);
+
+		let nuevaVidaPokemon1 = 0;
+		let porcentajeVidaPokemon1 = 0;
+		let daño = 0;
+		let restadorAleatorio = 0;
+
+		let log = document.getElementById("text-log");
+
+		// Seleccionar aleatoriamente un valor de la lista de valores posibles
+		const valoresPosibles = [8, 10, 12, 14];
+		restadorAleatorio = valoresPosibles[Math.floor(Math.random() * valoresPosibles.length)];
+
+		// Calcular el daño (restando el valor aleatorio de la defensa)
+		daño = Math.ceil(Math.max(ataquePokemon2 - (defensaPokemon1 - restadorAleatorio), 0));
+		nuevaVidaPokemon1 = Math.max(vidaActual - daño, 0);
+
+		porcentajeVidaPokemon1 = (nuevaVidaPokemon1 / vidaPokemon1) * 100;
+		document.getElementById("pokemon1-barra").style.width = porcentajeVidaPokemon1 + "%";
+		document.getElementById("pokemon1-vida-actual").innerText = nuevaVidaPokemon1;
+
+		log.innerHTML += `<p>¡@pokemon2.Nombre atacó! Daño causado: ${daño}</p>`;
+		log.scrollTop = log.scrollHeight;
+
+		// Verificar si el jugador perdió
+		if (nuevaVidaPokemon1 === 0) {
+			log.innerHTML += `<p>¡@pokemon1.Nombre ha sido derrotado! ¡@pokemon2.Nombre gana la batalla!</p>`;
+			log.scrollTop = log.scrollHeight;
+
+			// Mostrar el modal de derrota
+			
+			ModalDerrota();
+			return;
+		}
+	}
+
+		function ModalVictoria() {
+
+			let vidaPokemon1 = parseInt(document.getElementById("pokemon1-vida-actual").innerText);
+			let vidaPokemon2 = parseInt(document.getElementById("pokemon2-vida-actual").innerText);
+			
+			// Actualizar los valores de los campos ocultos antes de enviar el formulario
+			document.getElementById("vidaPokemon1v").value = vidaPokemon1;
+			document.getElementById("vidaPokemon2v").value = vidaPokemon2;
+
+			// Mostrar el modal de victoria
+			const modal = new bootstrap.Modal(document.getElementById('VictoriaModal'));
+			modal.show();
+			return;
+		}
+
+	function ModalDerrota() {
+
+		let vidaPokemon1 = parseInt(document.getElementById("pokemon1-vida-actual").innerText);
+		let vidaPokemon2 = parseInt(document.getElementById("pokemon2-vida-actual").innerText);
+
+		// Actualizar los valores de los campos ocultos antes de enviar el formulario
+		document.getElementById("vidaPokemon1d").value = vidaPokemon1;
+		document.getElementById("vidaPokemon2d").value = vidaPokemon2;
+
+		const modal = new bootstrap.Modal(document.getElementById('DerrotaModal'));
+		modal.show();
+		return;
+	}
+
+</script>
 <div class="text-center">
-    <h2 class="display-4" style="color: #495B9C; font-weight: bold;">Batalla</h2>
+	<h2 class="display-4" style="color: #495B9C; font-weight: bold;">Batalla</h2>
 </div>
 
 <div class="container p-4 rounded-3 border border-1 custom-border mt-5" style="min-height: 60vh;">
-    <div class="row mt-4">
+	<div class="row mt-4">
+		@if (Model != null)
+		{
 
-        <div class="col-md-3 text-center" style="height: 200px;">
-            <div class="text-box rounded-3 border border-1 custom-border p-2">
-                <p>Dragonair ha perdido 36 puntos de vida...</p>
-            </div>
+			<div class="col-md-3 text-center" style="height: 200px;">
+				<div class="text-box rounded-3 border border-1 custom-border p-2" id="text-log" style="overflow-y: auto; max-height: 150px;">
+					<p>¡La batalla ha comenzado!</p>
+				</div>
 
-            <div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">
-                <div class="mb-3 text-center w-100">
-                    <img src="/images/usuario.png" alt="Avatar" class="rounded-circle border" style="width: 50px; height: 50px; object-fit: cover;">
-                    <h5 class="mt-2">Usuario 1</h5>
-                </div>
+				<div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">
+					<div class="mb-3 text-center w-100">
+						<img src="/images/usuario.png" alt="Avatar" class="rounded-circle border" style="width: 50px; height: 50px; object-fit: cover;">
+						<h5 class="mt-2">@Model.Usuario1.Nombre</h5>
+					</div>
 
-                <div class="w-100">
-                    <div class="hp-bar" style="background-color: lightgray; height: 10px; border-radius: 5px; overflow: hidden;">
-                        <div class="hp-fill" style="background-color: green; width: 64%; height: 100%;"></div>
-                    </div>
-                    <p class="mt-1 mb-3">64/100</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-6 justify-content-center">
-            <div class="game-screen border rounded p-3" style="height: 400px; position: relative;">
-                <img src="/images/fondo_batalla.jpg" style="object-fit: cover; width: 100%; height: 100%;">
-                @if (ViewData["PokemonSeleccionado"] != null)
-                {
-                    var pokemonSeleccionado = ViewData["PokemonSeleccionado"].ToString();
-                    <img src="@pokemonSeleccionado" alt="Pokémon Seleccionado" style="position: absolute; bottom: 30px; left: 200px; width: 150px;">
-                }
-                <img src="/pokedex/Pokemon3.png" alt="Dragonair" style="position: absolute; top: 100px; right: 70px; width: 80px;">
-            </div>
-        </div>
+					<div class="w-100">
+						<div class="hp-bar">
+							<div id="pokemon1-barra" class="hp-fill" style="width: 100%;"></div>
+						</div>
+						<p class="mt-1 mb-3">
+							<span id="pokemon1-vida-actual">@usuarioPokemon1.Vida</span>/@usuarioPokemon1.Vida
+						</p>
+					</div>
+				</div>
+			</div>
 
 
-        <div class="col-md-3 text-center">
-            <div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">
-                <div class="mb-3 text-center w-100">
-                    <img src="/images/usuario.png" alt="Avatar" class="rounded-circle border" style="width: 50px; height: 50px; object-fit: cover;">
-                    <h5 class="mt-2">Usuario 2</h5>
-                </div>
+			<div class="col-md-6 justify-content-center">
+				<div class="game-screen border rounded p-3" style="height: 400px; position: relative;">
+					<img src="/images/fondo_batalla.jpg" style="object-fit: cover; width: 100%; height: 100%;">
+					<img src="@pokemon1.Imagen" alt="Pokémon Seleccionado 1" style="position: absolute; bottom: 30px; left: 200px; width: 150px;">
 
-                <div class="w-100">
-                    <div class="hp-bar" style="background-color: lightgray; height: 10px; border-radius: 5px; overflow: hidden;">
-                        <div class="hp-fill" style="background-color: green; width: 64%; height: 100%;"></div>
-                    </div>
-                    <p class="mt-1 mb-3">64/100</p>
-                </div>
-            </div>
+					<img src="@pokemon2.Imagen" alt="Pokémon Seleccionado 2" style="position: absolute; top: 100px; right: 70px; width: 80px;">
+				</div>
+			</div>
 
-            <div class="mt-5 p-3 text-center d-flex flex-column align-items-center">
-                <button type="button" class="btn fw-bold rounded mb-2 w-100" style="color: white; background-color: #4059a5; border-color: #4059a5;">
-                    Atacar
-                </button>
-                <button type="button" class="btn fw-bold rounded w-100" style="background-color: #C9D1EF; border-color: #C9D1EF;">
-                    Volver
-                </button>
-            </div>
-        </div>
-    </div>
+
+			<div class="col-md-3 text-center">
+				<div class="mt-4 rounded-3 border border-1 custom-border p-3 d-flex flex-column align-items-center h-auto">
+					<div class="mb-3 text-center w-100">
+						<img src="/images/usuario.png" alt="Avatar" class="rounded-circle border" style="width: 50px; height: 50px; object-fit: cover;">
+						<h5 class="mt-2">@Model.Usuario2.Nombre</h5>
+					</div>
+
+					<div class="w-100">
+						<div class="hp-bar">
+							<div id="pokemon2-barra" class="hp-fill" style="width: 100%;"></div>
+						</div>
+						<p class="mt-1 mb-3">
+							<span id="pokemon2-vida-actual">@usuarioPokemon2.Vida</span>/@usuarioPokemon2.Vida
+						</p>
+					</div>
+				</div>
+
+				<div class="mt-5 p-3 text-center d-flex flex-column align-items-center">
+					<button type="button" class="btn fw-bold rounded mb-2 w-100" style="color: white; background-color: #4059a5; border-color: #4059a5;" onclick="atacarJugador()">
+						Atacar
+					</button>
+					<button type="button" class="btn fw-bold rounded w-100" style="background-color: #C9D1EF; border-color: #C9D1EF;">
+						Volver
+					</button>
+				</div>
+			</div>
+		}
+	</div>
+
+	<div class="modal fade" id="VictoriaModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body d-flex align-items-center justify-content-center">
+					<div class="me-3">
+						<img src="/images/retoEnviado.png" style="width: 250px; height: 250px;">
+					</div>
+					<div>
+						<h5 class="modal-title mb-0 fw-bold" id="customModalLabel">¡Felicidades @Model.Usuario1.Nombre, has ganado la batalla!</h5>
+						<form id="actualizarVidasForm" method="post" action="@Url.Action("ActualizarVidas", "Batalla")">
+							@Html.AntiForgeryToken()
+
+							<!-- Campos ocultos para pasar los valores -->
+							<input type="hidden" name="usuarioId1" value="@usuarioPokemon1.UsuarioId" />
+							<input type="hidden" name="usuarioId2" value="@usuarioPokemon2.UsuarioId" />
+							<input type="hidden" name="pokemonId1" value="@usuarioPokemon1.PokemonId" />
+							<input type="hidden" name="pokemonId2" value="@usuarioPokemon2.PokemonId" />
+							<input type="hidden" name="vidaPokemon1" id="vidaPokemon1v" value="0" />
+							<input type="hidden" name="vidaPokemon2" id="vidaPokemon2v" value="0" />
+
+							<!-- Botón para enviar el formulario -->
+							<button type="submit" class="btn fw-bold rounded" style="background-color: #C9D1EF; border-color: #C9D1EF;">
+								Volver
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="DerrotaModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body d-flex align-items-center justify-content-center">
+					<div class="me-3">
+						<img src="/images/psyduck.png" style="width: 150px; height: 200px;">
+					</div>
+					<div>
+						<h5 class="modal-title mb-0 fw-bold" id="customModalLabel">¡Oh no @Model.Usuario1.Nombre! Has perdido la batalla</h5>
+						<form id="retoForm" method="post" action="@Url.Action("ActualizarVidas", "Batalla")">
+							@Html.AntiForgeryToken()
+
+							<!-- Campos ocultos para pasar los valores -->
+							<input type="hidden" name="usuarioId1" value="@usuarioPokemon1.UsuarioId" />
+							<input type="hidden" name="usuarioId2" value="@usuarioPokemon2.UsuarioId" />
+							<input type="hidden" name="pokemonId1" value="@usuarioPokemon1.PokemonId" />
+							<input type="hidden" name="pokemonId2" value="@usuarioPokemon2.PokemonId" />
+							<input type="hidden" name="vidaPokemon1" id="vidaPokemon1d" value="0" />
+							<input type="hidden" name="vidaPokemon2" id="vidaPokemon2d" value="0" />
+
+							<!-- Botón para enviar el formulario -->
+							<button type="submit" class="btn fw-bold rounded" style="background-color: #C9D1EF; border-color: #C9D1EF;">
+								Volver
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>

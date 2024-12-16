@@ -1,64 +1,93 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Juego_de_Pokemon.Models.Usuario_Pokemones
+@{
+	ViewData["Title"] = "Home Page";
+	var usuarioPokemones = (List<Juego_de_Pokemon.Models.Usuario_Pokemones>)ViewData["UsuarioPokemones"];
+    var pokemonEnfermeriaIds = (List<int>)ViewData["PokemonEnfermeriaIds"];
 }
 
 <div class="text-center">
-    <h1 class="display-4" style="color: #495B9C; font-weight: bold;">Pokédex</h1>
+	<h1 class="display-4" style="color: #495B9C; font-weight: bold;">Pokédex</h1>
 </div>
 
 <h3>Pokemones disponibles:</h3>
 
-@if (ViewData["Pokemones"] != null)
+@if (usuarioPokemones != null)
 {
-    var pokemones = (List<Pokemon>)ViewData["Pokemones"];
     <div class="container py-5">
         <div class="row justify-content-center">
-            @foreach (var pokemon in pokemones)
+            @foreach (var pokemon in usuarioPokemones)
             {
-                <div class="card" style="border-radius: 15px; width: 25%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
-                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                        HP @pokemon.HP
-                    </div>
-                    <div class="card-body d-flex flex-column align-items-start">
-                        @if (!string.IsNullOrEmpty(pokemon.Imagen))
-                        {
-                            <img src="@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" style="max-width: 100%; height: auto; margin-bottom: 10px; position: relative; z-index: 10;" />
-                        }
+                // Verificar si la vida del Pokémon es menor que 50
+                var isGrayedOut = pokemon.Vida < 50;
+                var isInEnfermeria = pokemonEnfermeriaIds.Contains(pokemon.Pokemon.Id);
 
-                        <h5 class="card-title" style="text-align: left; margin-bottom: 10px; margin-top: -10px; width: 100%;">@pokemon.Nombre</h5>
+                <div class="card" style="border-radius: 15px; width: 25%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;
+             @if (isGrayedOut) {
+                        <text>filter: grayscale(100%); opacity: 0.6;</text>
+                    }">
+                    @if (isGrayedOut)
+                    {
+                                    <div class="card-footer text-center">
 
-                        <div class="d-flex align-items-center justify-content-start" style="position: relative; width: 100%;">
-                            @if (pokemon.Tipo == "Agua")
+                            @if (isInEnfermeria)
                             {
-                                <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Fuego")
-                            {
-                                <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Siniestro")
-                            {
-                                <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Volador")
-                            {
-                                <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
-                            }
-                            else if (pokemon.Tipo == "Dragón")
-                            {
-                                <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                                    <p class="text-muted">En tratamiento</p>
                             }
                             else
                             {
-                                <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                                                    <form method="post" action="@Url.Action("EnviarATratamiento", "Enfermeria")">
+                                <input type="hidden" name="pokemonId" value="@pokemon.Pokemon.Id" />
+                                <button type="submit" class="btn btn-primary no-grayscale">Enviar a la enfermería</button>
+                            </form>
                             }
-                            <p class="card-text" style="margin: 0; z-index: 5;">Tipo: @pokemon.Tipo</p>
+                                    </div>
+                    }
+
+                            <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
+                                HP @pokemon.Vida
+                            </div>
+
+                            <div class="card-body d-flex flex-column align-items-start">
+                        @if (!string.IsNullOrEmpty(pokemon.Pokemon.Imagen))
+                        {
+                                        <img src="@pokemon.Pokemon.Imagen" class="card-img-top" alt="@pokemon.Pokemon.Nombre" style="max-width: 100%; height: auto; margin-bottom: 10px; position: relative; z-index: 10;" />
+                        }
+
+                                <h5 class="card-title" style="text-align: left; margin-bottom: 10px; margin-top: -10px; width: 100%;">@pokemon.Pokemon.Nombre</h5>
+
+                                <div class="d-flex align-items-center justify-content-start" style="position: relative; width: 100%;">
+                            @if (pokemon.Pokemon.Tipo == "Agua")
+                            {
+                                            <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Pokemon.Tipo == "Fuego")
+                            {
+                                            <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Pokemon.Tipo == "Siniestro")
+                            {
+                                            <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Pokemon.Tipo == "Volador")
+                            {
+                                            <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else if (pokemon.Pokemon.Tipo == "Dragón")
+                            {
+                                            <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                            else
+                            {
+                                            <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 25%; z-index: 5;">
+                            }
+                                    <p class="card-text" style="margin: 0; z-index: 5;">Tipo: @pokemon.Pokemon.Tipo</p>
+                                </div>
+                            </div>
+
+                            <div style="position: absolute; bottom: 5px; right: 3px; z-index: 0;">
+                                <img src="/images/Fondo.gif" alt="Fondo animado" style="width: 160px; height: 140px;">
+                            </div>
                         </div>
-                    </div>
-                    <div style="position: absolute; bottom: 5px; right: 3px; z-index: 0;">
-                        <img src="/images/Fondo.gif" alt="Fondo animado" style="width: 160px; height: 140px;">
-                    </div>
-                </div>
             }
         </div>
     </div>
@@ -69,33 +98,44 @@ else
 }
 
 <style>
-    .vertical-text {
-        writing-mode: horizontal-tb;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        color: black;
-        margin-right: 10px;
-        font-weight: bold;
-    }
+	.vertical-text {
+		writing-mode: horizontal-tb;
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+		color: black;
+		margin-right: 10px;
+		font-weight: bold;
+	}
 
-    .card-body img {
-        max-width: 100%;
-        height: auto;
-    }
+	.card-body img {
+		max-width: 100%;
+		height: auto;
+	}
 
-    .card {
-        border-radius: 15px;
-        width: 25%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-        position: relative;
-    }
+	.card {
+		border-radius: 15px;
+		width: 25%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		margin: 20px;
+		position: relative;
+	}
 
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	/* Grayed out effect */
+	.card[style*="filter: grayscale(100%)"] {
+		filter: grayscale(100%);
+		opacity: 0.6;
+	}
+
+	.card-footer .btn.no-grayscale {
+		filter: none !important;
+		background-color: black;
+	}
 </style>

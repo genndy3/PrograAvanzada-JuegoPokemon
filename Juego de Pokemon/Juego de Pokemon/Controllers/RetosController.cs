@@ -32,7 +32,7 @@ namespace Juego_de_Pokemon.Controllers
                 .CountAsync();
 
             var retos = await _context.Retos
-                .Where(m => m.RetadoId == currentUserId)
+                .Where(m => m.RetadoId == currentUserId && m.Estado == "Pendiente")
                 .Include(m => m.Retador)
                 .ToListAsync();
 
@@ -57,8 +57,8 @@ namespace Juego_de_Pokemon.Controllers
             }
             reto.Estado = "Aceptado";
             await _context.SaveChangesAsync();
-            return RedirectToAction("BeforeDuel", "Batalla");
-        }
+			return RedirectToAction("BeforeDuel", "Batalla", new { idReto = reto.Id });
+		}
 
 
         [HttpPost]

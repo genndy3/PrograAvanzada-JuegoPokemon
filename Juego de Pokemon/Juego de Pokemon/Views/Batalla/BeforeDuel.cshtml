@@ -13,7 +13,7 @@
 
 @if (ViewData["Pokemones"] != null)
 {
-    var pokemones = (List<Pokemon>)ViewData["Pokemones"];
+    var pokemones = (List<Usuario_Pokemones>)ViewData["Pokemones"];
     if (pokemones.Count == 0)
     {
         <p style="color: white;">No tienes Pokémon asignados.</p>
@@ -26,48 +26,49 @@
                 {
                     <div class="card">
                         <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 5px 10px; border-radius: 5px;">
-                            HP @pokemon.HP
+                            HP @pokemon.Vida
                         </div>
 
-                        @if (!string.IsNullOrEmpty(pokemon.Imagen))
+                        @if (!string.IsNullOrEmpty(pokemon.Pokemon.Imagen))
                         {
-                            <img src="@pokemon.Imagen" class="card-img-top" alt="@pokemon.Nombre" />
+                            <img src="@pokemon.Pokemon.Imagen" class="card-img-top" alt="@pokemon.Pokemon.Nombre" />
                         }
 
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
                                 <div style="position: relative; display: flex; align-items: center;">
                                     <img src="/images/Fondo.gif" alt="Fondo animado" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-                                    @if (pokemon.Tipo == "Agua")
+                                    @if (pokemon.Pokemon.Tipo == "Agua")
                                     {
-                                        <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <img src="~/pokedex/Agua.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
                                     }
-                                    else if (pokemon.Tipo == "Fuego")
+                                    else if (pokemon.Pokemon.Tipo == "Fuego")
                                     {
-                                        <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <img src="~/pokedex/Fuego.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
                                     }
-                                    else if (pokemon.Tipo == "Siniestro")
+                                    else if (pokemon.Pokemon.Tipo == "Siniestro")
                                     {
-                                        <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <img src="~/pokedex/siniestro.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
                                     }
-                                    else if (pokemon.Tipo == "Volador")
+                                    else if (pokemon.Pokemon.Tipo == "Volador")
                                     {
-                                        <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <img src="~/pokedex/VOLADOR.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
                                     }
-                                    else if (pokemon.Tipo == "Dragón")
+                                    else if (pokemon.Pokemon.Tipo == "Dragón")
                                     {
-                                        <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <img src="~/pokedex/Dragon.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
                                     }
                                     else
                                     {
-                                        <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
+                                        <img src="~/pokedex/hoja.png" alt="Tipo: @pokemon.Pokemon.Tipo" style="width: 50px; height: 50px; margin-right: 10px;">
                                     }
-                                    <p class="card-text" style="font-weight: bold;">Tipo: @pokemon.Tipo</p>
+                                    <p class="card-text" style="font-weight: bold;">Tipo: @pokemon.Pokemon.Tipo</p>
                                 </div>
                             </div>
-                            <h5 class="card-title">@pokemon.Nombre</h5>
+                            <h5 class="card-title">@pokemon.Pokemon.Nombre</h5>
                             <form method="post" action="@Url.Action("SeleccionarPokemon", "Batalla")">
-                                <input type="hidden" name="pokemonId" value="@pokemon.Id" />
+                                <input type="hidden" name="retoId" value="@ViewData["RetoId"]"/>
+                                <input type="hidden" name="pokemonId" value="@pokemon.Pokemon.Id" />
                                 <button type="submit" class="btn btn-primary">Seleccionar</button>
                             </form>
                         </div>

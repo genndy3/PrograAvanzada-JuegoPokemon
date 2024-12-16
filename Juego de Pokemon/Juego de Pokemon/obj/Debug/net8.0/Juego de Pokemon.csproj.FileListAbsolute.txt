@@ -85,6 +85,15 @@ C:\Users\madia\Desktop\POKEMON\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Jueg
 C:\Users\madia\Desktop\POKEMON\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.pdb
 C:\Users\madia\Desktop\POKEMON\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.genruntimeconfig.cache
 C:\Users\madia\Desktop\POKEMON\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\ref\Juego de Pokemon.dll
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.AssemblyInfo.cs
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.sourcelink.json
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\bin\Debug\net8.0\appsettings.json
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\bin\Debug\net8.0\Juego de Pokemon.staticwebassets.runtime.json
@@ -147,15 +156,6 @@ C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego 
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.csproj.AssemblyReference.cache
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.AssemblyInfoInputs.cache
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.AssemblyInfo.cs
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.RazorAssemblyInfo.cache
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.RazorAssemblyInfo.cs
-C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\Juego de Pokemon.sourcelink.json
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\obj\Debug\net8.0\staticwebassets\msbuild.Juego de Pokemon.Microsoft.AspNetCore.StaticWebAssets.props

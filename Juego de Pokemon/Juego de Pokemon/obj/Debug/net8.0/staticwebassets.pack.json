@@ -1,367 +1,371 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Juego de Pokemon.bundle.scp.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Juego de Pokemon.bundle.scp.css",
       "PackagePath": "staticwebassets\\Juego de Pokemon.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\css\\login.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\Fondo.gif",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\Fondo.gif",
       "PackagePath": "staticwebassets\\images\\Fondo.gif"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\ash.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\ash.png",
       "PackagePath": "staticwebassets\\images\\ash.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\batalla.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\batalla.png",
       "PackagePath": "staticwebassets\\images\\batalla.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\carga.gif",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\carga.gif",
       "PackagePath": "staticwebassets\\images\\carga.gif"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\enviar.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\enviar.png",
       "PackagePath": "staticwebassets\\images\\enviar.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\fondo1.gif",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\fondo1.gif",
       "PackagePath": "staticwebassets\\images\\fondo1.gif"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\fondo_batalla.jpg",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\fondo_batalla.jpg",
       "PackagePath": "staticwebassets\\images\\fondo_batalla.jpg"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\logo.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\retoEnviado.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\psyduck.png",
+      "PackagePath": "staticwebassets\\images\\psyduck.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\retoEnviado.png",
       "PackagePath": "staticwebassets\\images\\retoEnviado.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\usuario.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\images\\usuario.png",
       "PackagePath": "staticwebassets\\images\\usuario.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Agua.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Agua.png",
       "PackagePath": "staticwebassets\\pokedex\\Agua.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Dragon.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Dragon.png",
       "PackagePath": "staticwebassets\\pokedex\\Dragon.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Fuego.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Fuego.png",
       "PackagePath": "staticwebassets\\pokedex\\Fuego.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon1.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon1.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon1.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon10.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon10.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon10.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon11.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon11.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon11.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon12.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon12.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon12.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon2.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon2.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon2.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon3.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon3.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon3.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon4.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon4.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon4.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon5.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon5.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon5.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon6.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon6.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon6.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon7.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon7.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon7.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon8.PNG",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon8.PNG",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon8.PNG"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon9.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\Pokemon9.png",
       "PackagePath": "staticwebassets\\pokedex\\Pokemon9.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\VOLADOR.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\VOLADOR.png",
       "PackagePath": "staticwebassets\\pokedex\\VOLADOR.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\bicho.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\bicho.png",
       "PackagePath": "staticwebassets\\pokedex\\bicho.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\hoja.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\hoja.png",
       "PackagePath": "staticwebassets\\pokedex\\hoja.png"
     },
     {
-      "Id": "C:\\Users\\madia\\Desktop\\POKEMON\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\siniestro.png",
+      "Id": "C:\\Users\\Lenovo\\Source\\Repos\\PrograAvanzada-JuegoPokemon\\Juego de Pokemon\\Juego de Pokemon\\wwwroot\\pokedex\\siniestro.png",
       "PackagePath": "staticwebassets\\pokedex\\siniestro.png"
     },
     {

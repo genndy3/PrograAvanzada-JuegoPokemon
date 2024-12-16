@@ -9,99 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Juego_de_Pokemon
 build_property.RootNamespace = Juego_de_Pokemon
-build_property.ProjectDir = C:\Users\madia\Desktop\POKEMON\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\
+build_property.ProjectDir = C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\madia\Desktop\POKEMON\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Source\Repos\PrograAvanzada-JuegoPokemon\Juego de Pokemon\Juego de Pokemon
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Batalla/BeforeDuel.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Batalla/BeforeDuel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF0YWxsYVxCZWZvcmVEdWVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Batalla/Index.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Batalla/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmF0YWxsYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Enfermeria/Enfermeria.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Enfermeria/Enfermeria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mZXJtZXJpYVxFbmZlcm1lcmlhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Enfermeria/Index.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Enfermeria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mZXJtZXJpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Home/Index.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Home/Privacy.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Mensajes/Index.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Mensajes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVuc2FqZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Pokemon/Editar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Pokemon/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Pokemon/Listar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Pokemon/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxMaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Pokemon/Registrar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Pokemon/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9rZW1vblxSZWdpc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/RedEntrenadores/Index.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/RedEntrenadores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVkRW50cmVuYWRvcmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Retos/Index.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Retos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/Error.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Editar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Eliminar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Eliminar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWxpbWluYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Listar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTGlzdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Login.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Registrar.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Usuarios/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcUmVnaXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/_ViewImports.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/_ViewStart.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/madia/Desktop/POKEMON/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/_Layout.cshtml]
+[C:/Users/Lenovo/Source/Repos/PrograAvanzada-JuegoPokemon/Juego de Pokemon/Juego de Pokemon/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bpsak9iz51
